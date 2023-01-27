@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!-- added id to the table just to show it in the code -->
+<table id="1.0">
+	<row>
+		<from>Providence</from>
+		<to>Miami</to>
+		<duration>22.5</duration>
+		<distance>1462.7</distance>
+	</row>
+	<row>
+		<from>Miami</from>
+		<to>Dallas</to>
+		<duration>19.75</duration>
+		<distance>1309.1</distance>
+	</row>
+	<row>
+		<from>Dallas</from>
+		<to>Los Angeles</to>
+		<duration>21.5</duration>
+		<distance>1435.7</distance>
+	</row>
+	<row>
+		<from>Los Angeles</from>
+		<to>Seattle</to>
+		<duration>17.9</duration>
+		<distance>1135.1</distance>
+	</row>
+	<row>
+		<from>Seattle</from>
+		<to>Chicago</to>
+		<duration>31</duration>
+		<distance>2042.8</distance>
+	</row>
+	<row>
+		<from>Chicago</from>
+		<to>New York</to>
+		<duration>12.1</duration>
+		<distance>788.9</distance>
+	</row>
+	<row>
+		<from>New York</from>
+		<to>Providence</to>
+		<duration>3.5</duration>
+		<distance>180.9</distance>
+	</row>
+</table>

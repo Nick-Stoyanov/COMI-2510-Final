@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<!-- added id to the table just to show it in the code -->
+<table id="1.0">
+	<row>
+		<name>2022 Mercedes-Benz S-Class</name>
+		<mpg>24</mpg>
+		<fuelCapacity>22</fuelCapacity>
+		<oilChange>10000</oilChange>
+		<tireLife>50000</tireLife>
+	</row>
+	<row>
+		<name>2022 Lexus ES</name>
+		<mpg>28</mpg>
+		<fuelCapacity>15.9</fuelCapacity>
+		<oilChange>8000</oilChange>
+		<tireLife>40000</tireLife>
+	</row>
+	<row>
+		<name>2022 Honda Accord Hybrid</name>
+		<mpg>47</mpg>
+		<fuelCapacity>12</fuelCapacity>
+		<oilChange>3000</oilChange>
+		<tireLife>35000</tireLife>
+	</row>
+</table>

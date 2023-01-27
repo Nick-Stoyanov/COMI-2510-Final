@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<table>
+    <fixedTestDataResults>
+        <row>
+            <name>2022 Mercedes-Benz S-Class</name>
+            <purchase.price>112150.0</purchase.price>
+            <four.tires>334.208</four.tires>
+            <oil.change>208.88000000000002</oil.change>
+            <fuel>1392.5333333333335</fuel>
+            <hotel>17979.046875</hotel>
+            <food>4023.6834375000003</food>
+            <grand.total>136088.35164583335</grand.total>
+        </row>
+        <row>
+            <name>2022 Lexus ES</name>
+            <purchase.price>41875.0</purchase.price>
+            <four.tires>208.88000000000002</four.tires>
+            <oil.change>104.44</oil.change>
+            <fuel>1193.6000000000001</fuel>
+            <hotel>6713.0859375</hotel>
+            <food>1615.1484375</food>
+            <grand.total>51710.154375</grand.total>
+        </row>
+        <row>
+            <name>2022 Honda Accord Hybrid</name>
+            <purchase.price>28335.0</purchase.price>
+            <four.tires>95.488</four.tires>
+            <oil.change>208.88000000000002</oil.change>
+            <fuel>711.0808510638299</fuel>
+            <hotel>4542.454687500001</hotel>
+            <food>1210.359375</food>
+            <grand.total>35103.262913563834</grand.total>
+        </row>
+        <row>
+            <name>Grand Total</name>
+            <purchase.price>182360.0</purchase.price>
+            <four.tires>638.576</four.tires>
+            <oil.change>522.2</oil.change>
+            <fuel>3297.2141843971635</fuel>
+            <hotel>29234.5875</hotel>
+            <food>6849.19125</food>
+            <grand.total>222901.76893439717</grand.total>
+        </row>
+    </fixedTestDataResults>
+    <excelTestDataResults>
+        <row>
+            <name>2022 Mercedes-Benz S-Class</name>
+            <purchase.price>112150.0</purchase.price>
+            <four.tires>334.208</four.tires>
+            <oil.change>208.88000000000002</oil.change>
+            <fuel>1392.5333333333335</fuel>
+            <hotel>17979.046875</hotel>
+            <food>4023.6834375000003</food>
+            <grand.total>136088.35164583335</grand.total>
+        </row>
+        <row>
+            <name>2022 Lexus ES</name>
+            <purchase.price>41875.0</purchase.price>
+            <four.tires>208.88000000000002</four.tires>
+            <oil.change>104.44</oil.change>
+            <fuel>1193.6000000000001</fuel>
+            <hotel>6713.0859375</hotel>
+            <food>1615.1484375</food>
+            <grand.total>51710.154375</grand.total>
+        </row>
+        <row>
+            <name>2022 Honda Accord Hybrid</name>
+            <purchase.price>28335.0</purchase.price>
+            <four.tires>95.488</four.tires>
+            <oil.change>208.88000000000002</oil.change>
+            <fuel>711.0808510638299</fuel>
+            <hotel>4542.454687500001</hotel>
+            <food>1210.359375</food>
+            <grand.total>35103.262913563834</grand.total>
+        </row>
+        <row>
+            <name>Grand Total</name>
+            <purchase.price>182360.0</purchase.price>
+            <four.tires>638.576</four.tires>
+            <oil.change>522.2</oil.change>
+            <fuel>3297.2141843971635</fuel>
+            <hotel>29234.5875</hotel>
+            <food>6849.19125</food>
+            <grand.total>222901.76893439717</grand.total>
+        </row>
+    </excelTestDataResults>
+    <xmlTestDataResults>
+        <row>
+            <name>2022 Mercedes-Benz S-Class</name>
+            <purchase.price>112150.0</purchase.price>
+            <four.tires>334.208</four.tires>
+            <oil.change>208.88000000000002</oil.change>
+            <fuel>1392.5333333333335</fuel>
+            <hotel>17979.046875</hotel>
+            <food>4023.6834375000003</food>
+            <grand.total>136088.35164583335</grand.total>
+        </row>
+        <row>
+            <name>2022 Lexus ES</name>
+            <purchase.price>41875.0</purchase.price>
+            <four.tires>208.88000000000002</four.tires>
+            <oil.change>104.44</oil.change>
+            <fuel>1193.6000000000001</fuel>
+            <hotel>6713.0859375</hotel>
+            <food>1615.1484375</food>
+            <grand.total>51710.154375</grand.total>
+        </row>
+        <row>
+            <name>2022 Honda Accord Hybrid</name>
+            <purchase.price>28335.0</purchase.price>
+            <four.tires>95.488</four.tires>
+            <oil.change>208.88000000000002</oil.change>
+            <fuel>711.0808510638299</fuel>
+            <hotel>4542.454687500001</hotel>
+            <food>1210.359375</food>
+            <grand.total>35103.262913563834</grand.total>
+        </row>
+        <row>
+            <name>Grand Total</name>
+            <purchase.price>182360.0</purchase.price>
+            <four.tires>638.576</four.tires>
+            <oil.change>522.2</oil.change>
+            <fuel>3297.2141843971635</fuel>
+            <hotel>29234.5875</hotel>
+            <food>6849.19125</food>
+            <grand.total>222901.76893439717</grand.total>
+        </row>
+    </xmlTestDataResults>
+</table>

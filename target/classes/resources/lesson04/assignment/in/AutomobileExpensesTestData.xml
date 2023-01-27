@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!-- added id to the table just to show it in the code -->
+<table id="1.0">
+	<row>
+		<name>2022 Honda Accord Hybrid</name>
+		<purchasePrice>28335</purchasePrice>
+		<oilChange>75</oilChange>
+		<fuel>4</fuel>		
+		<fourNewTires>400</fourNewTires>
+	</row>
+	<row>
+		<name>2022 Jeep Grand Cherokee</name>
+		<purchasePrice>37460</purchasePrice>
+		<oilChange>75</oilChange>
+		<fuel>4</fuel>		
+		<fourNewTires>600</fourNewTires>
+	</row>
+	<row>
+		<name>2022 Lexus ES</name>
+		<purchasePrice>41875</purchasePrice>
+		<oilChange>100</oilChange>
+		<fuel>4</fuel>		
+		<fourNewTires>1000</fourNewTires>
+	</row>
+	<row>
+		<name>2022 Lincoln Aviator</name>
+		<purchasePrice>52560</purchasePrice>
+		<oilChange>75</oilChange>
+		<fuel>4</fuel>		
+		<fourNewTires>750</fourNewTires>
+	</row>
+	<row>
+		<name>2022 Mercedes-Benz S-Class</name>
+		<purchasePrice>112150</purchasePrice>
+		<oilChange>250</oilChange>
+		<fuel>4</fuel>		
+		<fourNewTires>2000</fourNewTires>
+	</row>
+</table>

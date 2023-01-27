@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<!-- added id to the table just to show it in the code -->
+<table id="1.0">
+	<row>
+		<name>2022 Honda Accord Hybrid</name>
+		<hotel>283.35</hotel>
+		<food>75.5</food>
+	</row>
+	<row>
+		<name>2022 Jeep Grand Cherokee</name>
+		<hotel>374.6</hotel>
+		<food>75.01</food>
+	</row>
+	<row>
+		<name>2022 Lexus ES</name>
+		<hotel>418.75</hotel>
+		<food>100.75</food>
+	</row>
+	<row>
+		<name>2022 Lincoln Aviator</name>
+		<hotel>525.6</hotel>
+		<food>75.75</food>
+	</row>
+	<row>
+		<name>2022 Mercedes-Benz S-Class</name>
+		<hotel>1121.5</hotel>
+		<food>250.99</food>
+	</row>
+</table>
