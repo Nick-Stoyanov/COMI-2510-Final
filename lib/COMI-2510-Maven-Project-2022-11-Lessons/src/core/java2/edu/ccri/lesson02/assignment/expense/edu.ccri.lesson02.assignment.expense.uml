@@ -1,0 +1,1068 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:UMLLabProfile="http:///schemas/UMLLabProfile/NS/0" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http:///schemas/UMLLabProfile/NS/0 pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile">
+  <uml:Model xmi:id="_T9jmMGEMEe2CUoAii3PDnw" name="edu_ccri_lesson02_assignment_expense">
+    <eAnnotations xmi:id="_UBjVYGEMEe2CUoAii3PDnw" source="http://ns.yatta.de/umllab">
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_UBjVYWEMEe2CUoAii3PDnw" source="codegen">
+        <details xmi:id="_UBjVYmEMEe2CUoAii3PDnw" key="codegenDirectory" value="/COMI-2510-Maven-Project-2022-11-Lesson-1-3/src/main/java"/>
+        <details xmi:id="_WuRaUGEMEe2CUoAii3PDnw" key="AssociatedSourceCode" value="/COMI-2510-Maven-Project-2022-11-Lesson-1-3/src/main/java/edu/ccri/lesson02/assignment/expense/TireExpense.java;2267041428/1;/COMI-2510-Maven-Project-2022-11-Lesson-1-3/src/main/java/edu/ccri/lesson02/assignment/expense/PurchasePriceExpense.java;1534687528/1;/COMI-2510-Maven-Project-2022-11-Lesson-1-3/src/main/java/edu/ccri/lesson02/assignment/expense/FoodExpense.java;1794859174/1;/COMI-2510-Maven-Project-2022-11-Lesson-1-3/src/main/java/edu/ccri/lesson02/assignment/expense/FuelExpense.java;1157604679/1;/COMI-2510-Maven-Project-2022-11-Lesson-1-3/src/main/java/edu/ccri/lesson02/assignment/expense/HotelExpense.java;269521748/1;/COMI-2510-Maven-Project-2022-11-Lesson-1-3/src/main/java/edu/ccri/lesson02/assignment/expense/OilExpense.java;1078365350/1;/COMI-2510-Maven-Project-2022-11-Lesson-1-3/src/main/java/edu/ccri/lesson02/assignment/expense/ExpenseHelper.java;3811557058/1;/COMI-2510-Maven-Project-2022-11-Lesson-1-3/src/main/java/edu/ccri/lesson02/assignment/expense/Expense.java;1574390470/1;/COMI-2510-Maven-Project-2022-11-Lesson-1-3/src/main/java/edu/ccri/lesson02/assignment/expense/TotalExpense.java;328464129/1;/COMI-2510-Maven-Project-2022-11-Lesson-1-3/src/main/java/edu/ccri/lesson02/assignment/expense/TravelEntertainmentExpense.java;1952332432/1;"/>
+      </contents>
+      <contents xmi:type="ecore:EAnnotation" xmi:id="_ASmpIIw7Ee2CfYXjVVB3ug" source="preferences">
+        <contents xmi:type="ecore:EAnnotation" xmi:id="_ASnQMIw7Ee2CfYXjVVB3ug" source="com.yattasolutions.codegen.reverse">
+          <details xmi:id="_ASnQMYw7Ee2CfYXjVVB3ug" key="com.yattasolutions.codegen.reverse.roundtrip.ReverseEngineerNewFiles" value="true"/>
+          <details xmi:id="_ASnQMow7Ee2CfYXjVVB3ug" key="com.yattasolutions.codegen.reverse.roundtrip.RemoveDeletedFiles" value="true"/>
+          <details xmi:id="_ASnQM4w7Ee2CfYXjVVB3ug" key="com.yattasolutions.codegen.reverse.roundtrip.ReverseEngineerChangedFiles" value="true"/>
+        </contents>
+      </contents>
+    </eAnnotations>
+    <elementImport xmi:id="_WtD5YWEMEe2CUoAii3PDnw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+    </elementImport>
+    <elementImport xmi:id="_WtD5YmEMEe2CUoAii3PDnw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#byte"/>
+    </elementImport>
+    <elementImport xmi:id="_WtD5Y2EMEe2CUoAii3PDnw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#char"/>
+    </elementImport>
+    <elementImport xmi:id="_WtD5ZGEMEe2CUoAii3PDnw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </elementImport>
+    <elementImport xmi:id="_WtD5ZWEMEe2CUoAii3PDnw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#float"/>
+    </elementImport>
+    <elementImport xmi:id="_WtD5ZmEMEe2CUoAii3PDnw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </elementImport>
+    <elementImport xmi:id="_WtD5Z2EMEe2CUoAii3PDnw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#long"/>
+    </elementImport>
+    <elementImport xmi:id="_WtD5aGEMEe2CUoAii3PDnw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#short"/>
+    </elementImport>
+    <elementImport xmi:id="_WtD5aWEMEe2CUoAii3PDnw">
+      <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+    </elementImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_Ws6vcGEMEe2CUoAii3PDnw" name="edu">
+      <packagedElement xmi:type="uml:Package" xmi:id="_Ws6vcWEMEe2CUoAii3PDnw" name="ccri">
+        <packagedElement xmi:type="uml:Package" xmi:id="_Ws6vcmEMEe2CUoAii3PDnw" name="lesson02">
+          <packagedElement xmi:type="uml:Package" xmi:id="_Ws6vc2EMEe2CUoAii3PDnw" name="assignment">
+            <packagedElement xmi:type="uml:Package" xmi:id="_Ws7WgGEMEe2CUoAii3PDnw" name="expense">
+              <packagedElement xmi:type="uml:Class" xmi:id="_WtD5YGEMEe2CUoAii3PDnw" name="TireExpense">
+                <ownedComment xmi:id="_WtjBkmEMEe2CUoAii3PDnw">
+                  <body>Tire expense&#xD;
+ *&#xD;
+@author dean grammas</body>
+                </ownedComment>
+                <generalization xmi:id="_WtbFwGEMEe2CUoAii3PDnw" general="_WtG8tGEMEe2CUoAii3PDnw"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WtglVGEMEe2CUoAii3PDnw" name="TireExpense" specification="_WtEgcGEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WtglVWEMEe2CUoAii3PDnw" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtglVmEMEe2CUoAii3PDnw" name="expense">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtglV2EMEe2CUoAii3PDnw" type="_WtD5YGEMEe2CUoAii3PDnw" direction="return"/>
+                  <language>java</language>
+                  <body>super(name, expense);&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_WtEgcGEMEe2CUoAii3PDnw" name="TireExpense" method="_WtglVGEMEe2CUoAii3PDnw">
+                  <eAnnotations xmi:id="_WtEgc2EMEe2CUoAii3PDnw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_WtEgdGEMEe2CUoAii3PDnw" key="create"/>
+                  </eAnnotations>
+                  <ownedParameter xmi:id="_WtEgcWEMEe2CUoAii3PDnw" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtEgcmEMEe2CUoAii3PDnw" name="expense">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtEgdWEMEe2CUoAii3PDnw" type="_WtD5YGEMEe2CUoAii3PDnw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_WtEgdmEMEe2CUoAii3PDnw" name="PurchasePriceExpense">
+                <ownedComment xmi:id="_WtjBk2EMEe2CUoAii3PDnw">
+                  <body>Purchase Price expense&#xD;
+ *&#xD;
+@author dean grammas</body>
+                </ownedComment>
+                <generalization xmi:id="_WtbFwWEMEe2CUoAii3PDnw" general="_WtG8tGEMEe2CUoAii3PDnw"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WthMYGEMEe2CUoAii3PDnw" name="PurchasePriceExpense" specification="_WtEgd2EMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WthMYWEMEe2CUoAii3PDnw" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WthMYmEMEe2CUoAii3PDnw" name="expense">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WthMY2EMEe2CUoAii3PDnw" type="_WtEgdmEMEe2CUoAii3PDnw" direction="return"/>
+                  <language>java</language>
+                  <body>super(name, expense);&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_WtEgd2EMEe2CUoAii3PDnw" name="PurchasePriceExpense" method="_WthMYGEMEe2CUoAii3PDnw">
+                  <eAnnotations xmi:id="_WtEgemEMEe2CUoAii3PDnw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_WtEge2EMEe2CUoAii3PDnw" key="create"/>
+                  </eAnnotations>
+                  <ownedParameter xmi:id="_WtEgeGEMEe2CUoAii3PDnw" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtEgeWEMEe2CUoAii3PDnw" name="expense">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtEgfGEMEe2CUoAii3PDnw" type="_WtEgdmEMEe2CUoAii3PDnw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_WtEgfWEMEe2CUoAii3PDnw" name="FoodExpense">
+                <ownedComment xmi:id="_WtjBlGEMEe2CUoAii3PDnw">
+                  <body>Food expense&#xD;
+ *&#xD;
+@author dean grammas</body>
+                </ownedComment>
+                <generalization xmi:id="_WtbFwmEMEe2CUoAii3PDnw" general="_WtG8tGEMEe2CUoAii3PDnw"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WthMZGEMEe2CUoAii3PDnw" name="FoodExpense" specification="_WtFHgGEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WthMZWEMEe2CUoAii3PDnw" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WthMZmEMEe2CUoAii3PDnw" name="expense">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WthMZ2EMEe2CUoAii3PDnw" type="_WtEgfWEMEe2CUoAii3PDnw" direction="return"/>
+                  <language>java</language>
+                  <body>super(name, expense);&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_WtFHgGEMEe2CUoAii3PDnw" name="FoodExpense" method="_WthMZGEMEe2CUoAii3PDnw">
+                  <eAnnotations xmi:id="_WtFHg2EMEe2CUoAii3PDnw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_WtFHhGEMEe2CUoAii3PDnw" key="create"/>
+                  </eAnnotations>
+                  <ownedParameter xmi:id="_WtFHgWEMEe2CUoAii3PDnw" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtFHgmEMEe2CUoAii3PDnw" name="expense">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtFHhWEMEe2CUoAii3PDnw" type="_WtEgfWEMEe2CUoAii3PDnw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_WtFHhmEMEe2CUoAii3PDnw" name="FuelExpense">
+                <ownedComment xmi:id="_WtjBlWEMEe2CUoAii3PDnw">
+                  <body>Fuel expense&#xD;
+ *&#xD;
+@author dean grammas</body>
+                </ownedComment>
+                <generalization xmi:id="_WtbFw2EMEe2CUoAii3PDnw" general="_WtG8tGEMEe2CUoAii3PDnw"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WthMaGEMEe2CUoAii3PDnw" name="FuelExpense" specification="_WtFHh2EMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WthMaWEMEe2CUoAii3PDnw" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WthMamEMEe2CUoAii3PDnw" name="expense">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WthMa2EMEe2CUoAii3PDnw" type="_WtFHhmEMEe2CUoAii3PDnw" direction="return"/>
+                  <language>java</language>
+                  <body>super(name, expense);&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_WtFHh2EMEe2CUoAii3PDnw" name="FuelExpense" method="_WthMaGEMEe2CUoAii3PDnw">
+                  <eAnnotations xmi:id="_WtFHimEMEe2CUoAii3PDnw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_WtFHi2EMEe2CUoAii3PDnw" key="create"/>
+                  </eAnnotations>
+                  <ownedParameter xmi:id="_WtFHiGEMEe2CUoAii3PDnw" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtFHiWEMEe2CUoAii3PDnw" name="expense">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtFHjGEMEe2CUoAii3PDnw" type="_WtFHhmEMEe2CUoAii3PDnw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_WtFHjWEMEe2CUoAii3PDnw" name="HotelExpense">
+                <ownedComment xmi:id="_WtjBlmEMEe2CUoAii3PDnw">
+                  <body>Hotel expense&#xD;
+ *&#xD;
+@author dean grammas</body>
+                </ownedComment>
+                <generalization xmi:id="_WtbFxGEMEe2CUoAii3PDnw" general="_WtG8tGEMEe2CUoAii3PDnw"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WthMbGEMEe2CUoAii3PDnw" name="HotelExpense" specification="_WtFHjmEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WthMbWEMEe2CUoAii3PDnw" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WthMbmEMEe2CUoAii3PDnw" name="expense">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WthMb2EMEe2CUoAii3PDnw" type="_WtFHjWEMEe2CUoAii3PDnw" direction="return"/>
+                  <language>java</language>
+                  <body>super(name, expense);&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_WtFHjmEMEe2CUoAii3PDnw" name="HotelExpense" method="_WthMbGEMEe2CUoAii3PDnw">
+                  <eAnnotations xmi:id="_WtFukWEMEe2CUoAii3PDnw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_WtFukmEMEe2CUoAii3PDnw" key="create"/>
+                  </eAnnotations>
+                  <ownedParameter xmi:id="_WtFHj2EMEe2CUoAii3PDnw" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtFukGEMEe2CUoAii3PDnw" name="expense">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtFuk2EMEe2CUoAii3PDnw" type="_WtFHjWEMEe2CUoAii3PDnw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_WtFulGEMEe2CUoAii3PDnw" name="OilExpense">
+                <ownedComment xmi:id="_WtjBl2EMEe2CUoAii3PDnw">
+                  <body>Oil expense&#xD;
+ *&#xD;
+@author dean grammas</body>
+                </ownedComment>
+                <generalization xmi:id="_WtbFxWEMEe2CUoAii3PDnw" general="_WtG8tGEMEe2CUoAii3PDnw"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WthMcGEMEe2CUoAii3PDnw" name="OilExpense" specification="_WtFulWEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WthMcWEMEe2CUoAii3PDnw" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WthMcmEMEe2CUoAii3PDnw" name="expense">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WthMc2EMEe2CUoAii3PDnw" type="_WtFulGEMEe2CUoAii3PDnw" direction="return"/>
+                  <language>java</language>
+                  <body>super(name, expense);&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_WtFulWEMEe2CUoAii3PDnw" name="OilExpense" method="_WthMcGEMEe2CUoAii3PDnw">
+                  <eAnnotations xmi:id="_WtFumGEMEe2CUoAii3PDnw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_WtFumWEMEe2CUoAii3PDnw" key="create"/>
+                  </eAnnotations>
+                  <ownedParameter xmi:id="_WtFulmEMEe2CUoAii3PDnw" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtFul2EMEe2CUoAii3PDnw" name="expense">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtFummEMEe2CUoAii3PDnw" type="_WtFulGEMEe2CUoAii3PDnw" direction="return"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_WtFum2EMEe2CUoAii3PDnw" name="ExpenseHelper">
+                <ownedComment xmi:id="_WtjBmGEMEe2CUoAii3PDnw">
+                  <body>Static utility to calculate expenses.&#xD;
+ *&#xD;
+@author dean grammas</body>
+                </ownedComment>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WthMdGEMEe2CUoAii3PDnw" name="ExpenseHelper" specification="_WtFunGEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WthMdWEMEe2CUoAii3PDnw" type="_WtFum2EMEe2CUoAii3PDnw" direction="return"/>
+                  <language>java</language>
+                  <body>super();&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WthMdmEMEe2CUoAii3PDnw" name="getFoodCosts" specification="_WtGVoGEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WthMd2EMEe2CUoAii3PDnw" name="tripDataTotal">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WthMeGEMEe2CUoAii3PDnw" name="maxDuration">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WthMeWEMEe2CUoAii3PDnw" name="FoodCost">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WthMemEMEe2CUoAii3PDnw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return ((tripDataTotal / maxDuration) * FoodCost);&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WthMe2EMEe2CUoAii3PDnw" name="getFuelCosts" specification="_WtGVpWEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WthMfGEMEe2CUoAii3PDnw" name="tripDataTotal">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WthMfWEMEe2CUoAii3PDnw" name="mpg">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WthMfmEMEe2CUoAii3PDnw" name="gasPerUnit">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WthMf2EMEe2CUoAii3PDnw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return ((tripDataTotal / mpg) * gasPerUnit);&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WthMgGEMEe2CUoAii3PDnw" name="getHotelCosts" specification="_WtGVqmEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WthMgWEMEe2CUoAii3PDnw" name="tripDataTotal">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WthMgmEMEe2CUoAii3PDnw" name="maxDuration">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WthMg2EMEe2CUoAii3PDnw" name="hotelCost">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WthMhGEMEe2CUoAii3PDnw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return ((tripDataTotal / maxDuration) * hotelCost);&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WthzcGEMEe2CUoAii3PDnw" name="getOilCosts" specification="_WtGVr2EMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WthzcWEMEe2CUoAii3PDnw" name="tripDataTotal">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WthzcmEMEe2CUoAii3PDnw" name="maxDistance">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_Wthzc2EMEe2CUoAii3PDnw" name="oilChange">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WthzdGEMEe2CUoAii3PDnw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return ((tripDataTotal / maxDistance) * oilChange);&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WthzdWEMEe2CUoAii3PDnw" name="getTireCosts" specification="_WtGVtGEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WthzdmEMEe2CUoAii3PDnw" name="tripDataTotal">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_Wthzd2EMEe2CUoAii3PDnw" name="maxDistance">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WthzeGEMEe2CUoAii3PDnw" name="fourTires">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WthzeWEMEe2CUoAii3PDnw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return ((tripDataTotal / maxDistance) * fourTires);&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_WtFunGEMEe2CUoAii3PDnw" name="ExpenseHelper" method="_WthMdGEMEe2CUoAii3PDnw">
+                  <eAnnotations xmi:id="_WtFunWEMEe2CUoAii3PDnw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_WtFunmEMEe2CUoAii3PDnw" key="create"/>
+                  </eAnnotations>
+                  <ownedParameter xmi:id="_WtFun2EMEe2CUoAii3PDnw" type="_WtFum2EMEe2CUoAii3PDnw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_WtGVoGEMEe2CUoAii3PDnw" name="getFoodCosts" isStatic="true" method="_WthMdmEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WtGVoWEMEe2CUoAii3PDnw" name="tripDataTotal">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtGVomEMEe2CUoAii3PDnw" name="maxDuration">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtGVo2EMEe2CUoAii3PDnw" name="FoodCost">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtGVpGEMEe2CUoAii3PDnw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_WtGVpWEMEe2CUoAii3PDnw" name="getFuelCosts" isStatic="true" method="_WthMe2EMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WtGVpmEMEe2CUoAii3PDnw" name="tripDataTotal">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtGVp2EMEe2CUoAii3PDnw" name="mpg">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtGVqGEMEe2CUoAii3PDnw" name="gasPerUnit">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtGVqWEMEe2CUoAii3PDnw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_WtGVqmEMEe2CUoAii3PDnw" name="getHotelCosts" isStatic="true" method="_WthMgGEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WtGVq2EMEe2CUoAii3PDnw" name="tripDataTotal">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtGVrGEMEe2CUoAii3PDnw" name="maxDuration">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtGVrWEMEe2CUoAii3PDnw" name="hotelCost">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtGVrmEMEe2CUoAii3PDnw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_WtGVr2EMEe2CUoAii3PDnw" name="getOilCosts" isStatic="true" method="_WthzcGEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WtGVsGEMEe2CUoAii3PDnw" name="tripDataTotal">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtGVsWEMEe2CUoAii3PDnw" name="maxDistance">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtGVsmEMEe2CUoAii3PDnw" name="oilChange">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtGVs2EMEe2CUoAii3PDnw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_WtGVtGEMEe2CUoAii3PDnw" name="getTireCosts" isStatic="true" method="_WthzdWEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WtG8sGEMEe2CUoAii3PDnw" name="tripDataTotal">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtG8sWEMEe2CUoAii3PDnw" name="maxDistance">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtG8smEMEe2CUoAii3PDnw" name="fourTires">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtG8s2EMEe2CUoAii3PDnw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_WtG8tGEMEe2CUoAii3PDnw" name="Expense" isAbstract="true">
+                <ownedComment xmi:id="_WtjBmWEMEe2CUoAii3PDnw">
+                  <body>Abstract reepresentation of an expense&#xD;
+ *&#xD;
+@author dean grammas</body>
+                </ownedComment>
+                <generalization xmi:id="_WtdiAGEMEe2CUoAii3PDnw" general="_Wtbs0GEMEe2CUoAii3PDnw"/>
+                <ownedAttribute xmi:id="_WtewIGEMEe2CUoAii3PDnw" name="expense" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_WtewIWEMEe2CUoAii3PDnw" name="key" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_WtewI2EMEe2CUoAii3PDnw" name="name">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedAttribute>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WthzemEMEe2CUoAii3PDnw" name="Expense" specification="_WtG8tWEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_Wthze2EMEe2CUoAii3PDnw" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WthzfGEMEe2CUoAii3PDnw" name="expense">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WthzfWEMEe2CUoAii3PDnw" type="_WtG8tGEMEe2CUoAii3PDnw" direction="return"/>
+                  <language>java</language>
+                  <body>super();&#xD;
+	this.setKey(UniqueKeyCounter.getInternalCounter());&#xD;
+	&#xD;
+	this.setName(name);&#xD;
+	this.setExpense(expense);&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WthzfmEMEe2CUoAii3PDnw" name="getKey" specification="_WtG8u2EMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_Wthzf2EMEe2CUoAii3PDnw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return this.key;&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WthzgGEMEe2CUoAii3PDnw" name="setExpense" specification="_WtHjwGEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WthzgWEMEe2CUoAii3PDnw" name="expense">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>this.expense = expense;&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WthzgmEMEe2CUoAii3PDnw" name="setKey" specification="_WtHjwmEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_Wthzg2EMEe2CUoAii3PDnw" name="key">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>this.key = key;&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WthzhGEMEe2CUoAii3PDnw" name="toString" specification="_WtHjx2EMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WthzhWEMEe2CUoAii3PDnw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>StringBuilder sb = new StringBuilder();&#xD;
+	&#xD;
+	sb.append(this.getClass());&#xD;
+	sb.append(&quot; this.getKey()=&quot;).append(this.getKey()).append(&quot;\n&quot;);&#xD;
+	sb.append(&quot; this.getName()=&quot;).append(this.getName()).append(&quot;\n&quot;);&#xD;
+	sb.append(&quot; this.getExpense()=&quot;).append(this.getExpense()).append(&quot;\n&quot;);&#xD;
+	sb.append(super.toString());&#xD;
+	&#xD;
+	return sb.toString();&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_WtG8tWEMEe2CUoAii3PDnw" name="Expense" method="_WthzemEMEe2CUoAii3PDnw">
+                  <eAnnotations xmi:id="_WtG8uGEMEe2CUoAii3PDnw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_WtG8uWEMEe2CUoAii3PDnw" key="create"/>
+                  </eAnnotations>
+                  <ownedComment xmi:id="_WtjBmmEMEe2CUoAii3PDnw">
+                    <body>Constructor&#xD;
+     *&#xD;
+     * @param name    the name of the expense&#xD;
+     * @param expense the expense</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_WtG8tmEMEe2CUoAii3PDnw" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtG8t2EMEe2CUoAii3PDnw" name="expense">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtG8umEMEe2CUoAii3PDnw" type="_WtG8tGEMEe2CUoAii3PDnw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_WtG8u2EMEe2CUoAii3PDnw" name="getKey" method="_WthzfmEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WtG8vGEMEe2CUoAii3PDnw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_WtHjwGEMEe2CUoAii3PDnw" name="setExpense" method="_WthzgGEMEe2CUoAii3PDnw">
+                  <ownedComment xmi:id="_WtjBm2EMEe2CUoAii3PDnw">
+                    <body>Sets the expense&#xD;
+     *&#xD;
+     * @param expense the expense to set</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_WtHjwWEMEe2CUoAii3PDnw" name="expense">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_WtHjwmEMEe2CUoAii3PDnw" name="setKey" visibility="protected" method="_WthzgmEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WtHjw2EMEe2CUoAii3PDnw" name="key">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_WtHjx2EMEe2CUoAii3PDnw" name="toString" method="_WthzhGEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WtHjyGEMEe2CUoAii3PDnw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_WtIK0GEMEe2CUoAii3PDnw" name="TotalExpense">
+                <ownedComment xmi:id="_WtjBnGEMEe2CUoAii3PDnw">
+                  <body>Total expense&#xD;
+ *&#xD;
+@author dean grammas</body>
+                </ownedComment>
+                <generalization xmi:id="_WtdiAWEMEe2CUoAii3PDnw" general="_Wtbs0GEMEe2CUoAii3PDnw"/>
+                <ownedAttribute xmi:id="_WtewJGEMEe2CUoAii3PDnw" name="foodCost">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_WtfXMGEMEe2CUoAii3PDnw" name="fourTires" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_WtfXMmEMEe2CUoAii3PDnw" name="fuelCost" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_WtfXM2EMEe2CUoAii3PDnw" name="hotelCost">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_WtfXNGEMEe2CUoAii3PDnw" name="key" isReadOnly="true">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_Wtf-QGEMEe2CUoAii3PDnw" name="name">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_Wtf-QWEMEe2CUoAii3PDnw" name="oilChange" visibility="private">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedAttribute>
+                <ownedAttribute xmi:id="_Wtf-Q2EMEe2CUoAii3PDnw" name="purchasePrice">
+                  <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                </ownedAttribute>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WthziGEMEe2CUoAii3PDnw" name="TotalExpense" specification="_WtIx4GEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WthziWEMEe2CUoAii3PDnw" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WthzimEMEe2CUoAii3PDnw" type="_WtIK0GEMEe2CUoAii3PDnw" direction="return"/>
+                  <language>java</language>
+                  <body>super();&#xD;
+	this.setKey(UniqueKeyCounter.getInternalCounter());&#xD;
+	this.setName(name);&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Wthzi2EMEe2CUoAii3PDnw" name="addFoodCost" specification="_WtIx5WEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WthzjGEMEe2CUoAii3PDnw" name="foodCost">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>this.setFoodCost(this.getFoodCost() + foodCost);&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WthzjWEMEe2CUoAii3PDnw" name="addFourTires" specification="_WtIx52EMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WthzjmEMEe2CUoAii3PDnw" name="fourTires">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>this.setFourTires(this.getFourTires() + fourTires);&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Wthzj2EMEe2CUoAii3PDnw" name="addFuelCost" specification="_WtIx6WEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WthzkGEMEe2CUoAii3PDnw" name="fuelCost">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>this.setFuelCost(this.getFuelCost() + fuelCost);&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WthzkWEMEe2CUoAii3PDnw" name="addHotelCost" specification="_WtJY8GEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WthzkmEMEe2CUoAii3PDnw" name="hotelCost">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>this.setHotelCost(this.getHotelCost() + hotelCost);&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WtiagGEMEe2CUoAii3PDnw" name="addOilChange" specification="_WtJY8mEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WtiagWEMEe2CUoAii3PDnw" name="oilChange">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>this.setOilChange(this.getOilChange() + oilChange);&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WtiagmEMEe2CUoAii3PDnw" name="addPurchasePrice" specification="_WtJY9GEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_Wtiag2EMEe2CUoAii3PDnw" name="purchasePrice">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>this.setPurchasePrice(this.getPurchasePrice() + purchasePrice);&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WtiahGEMEe2CUoAii3PDnw" name="getFourTires" specification="_WtJY9mEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WtiahWEMEe2CUoAii3PDnw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return fourTires;&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WtiahmEMEe2CUoAii3PDnw" name="getGrandTotalCost" specification="_WtJY-GEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_Wtiah2EMEe2CUoAii3PDnw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return this.getPurchasePrice() + this.getFourTires() + this.getOilChange() + this.getFuelCost()&#xD;
+		+ this.getHotelCost() + this.getFoodCost();&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WtiaiGEMEe2CUoAii3PDnw" name="getOilChange" specification="_WtJY-mEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WtiaiWEMEe2CUoAii3PDnw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>return oilChange;&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WtiaimEMEe2CUoAii3PDnw" name="setFourTires" specification="_WtKAAWEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_Wtiai2EMEe2CUoAii3PDnw" name="fourTires">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>this.fourTires = fourTires;&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WtiajGEMEe2CUoAii3PDnw" name="setFuelCost" specification="_WtKAA2EMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WtiajWEMEe2CUoAii3PDnw" name="fuelCost">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>this.fuelCost = fuelCost;&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WtiajmEMEe2CUoAii3PDnw" name="setKey" specification="_WtKABWEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_Wtiaj2EMEe2CUoAii3PDnw" name="key">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>this.key = key;&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WtiakGEMEe2CUoAii3PDnw" name="setOilChange" specification="_WtKACmEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WtiakWEMEe2CUoAii3PDnw" name="oilChange">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>this.oilChange = oilChange;&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WtiakmEMEe2CUoAii3PDnw" name="toString" specification="_WtKADGEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_Wtiak2EMEe2CUoAii3PDnw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>StringBuilder sb = new StringBuilder();&#xD;
+	&#xD;
+	sb.append(this.getClass());&#xD;
+	sb.append(&quot; this.getName()=&quot;).append(this.getName()).append(&quot;\n&quot;);&#xD;
+	sb.append(&quot; this.getPurchasePrice()=&quot;).append(this.getPurchasePrice()).append(&quot;\n&quot;);&#xD;
+	sb.append(&quot; this.getFourTires()=&quot;).append(this.getFourTires()).append(&quot;\n&quot;);&#xD;
+	sb.append(&quot; this.getOilChange()=&quot;).append(this.getOilChange()).append(&quot;\n&quot;);&#xD;
+	sb.append(&quot; this.getFuelCost()=&quot;).append(this.getFuelCost()).append(&quot;\n&quot;);&#xD;
+	sb.append(&quot; this.getHotelCost()=&quot;).append(this.getHotelCost()).append(&quot;\n&quot;);&#xD;
+	sb.append(&quot; this.getFoodCost()=&quot;).append(this.getFoodCost()).append(&quot;\n&quot;);&#xD;
+	sb.append(&quot; this.getGrandTotalCost()=&quot;).append(this.getGrandTotalCost()).append(&quot;\n&quot;);&#xD;
+	&#xD;
+	return sb.toString();&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_WtIx4GEMEe2CUoAii3PDnw" name="TotalExpense" method="_WthziGEMEe2CUoAii3PDnw">
+                  <eAnnotations xmi:id="_WtIx4mEMEe2CUoAii3PDnw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_WtIx42EMEe2CUoAii3PDnw" key="create"/>
+                  </eAnnotations>
+                  <ownedComment xmi:id="_WtjBnWEMEe2CUoAii3PDnw">
+                    <body>Constructor&#xD;
+     *&#xD;
+     * @param name name of the expense</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_WtIx4WEMEe2CUoAii3PDnw" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtIx5GEMEe2CUoAii3PDnw" type="_WtIK0GEMEe2CUoAii3PDnw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_WtIx5WEMEe2CUoAii3PDnw" name="addFoodCost" method="_Wthzi2EMEe2CUoAii3PDnw">
+                  <ownedComment xmi:id="_WtjBnmEMEe2CUoAii3PDnw">
+                    <body>Add the food cost to the current total&#xD;
+     *&#xD;
+     * @param foodCost the foodCost to add</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_WtIx5mEMEe2CUoAii3PDnw" name="foodCost">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_WtIx52EMEe2CUoAii3PDnw" name="addFourTires" method="_WthzjWEMEe2CUoAii3PDnw">
+                  <ownedComment xmi:id="_WtjBn2EMEe2CUoAii3PDnw">
+                    <body>Add the cost of four tires to the current total&#xD;
+     *&#xD;
+     * @param fourTires the fourTires to add</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_WtIx6GEMEe2CUoAii3PDnw" name="fourTires">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_WtIx6WEMEe2CUoAii3PDnw" name="addFuelCost" method="_Wthzj2EMEe2CUoAii3PDnw">
+                  <ownedComment xmi:id="_WtjBoGEMEe2CUoAii3PDnw">
+                    <body>Add the cost of fuel to the current total&#xD;
+     *&#xD;
+     * @param fuelCost the fuelCost to add</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_WtIx6mEMEe2CUoAii3PDnw" name="fuelCost">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_WtJY8GEMEe2CUoAii3PDnw" name="addHotelCost" method="_WthzkWEMEe2CUoAii3PDnw">
+                  <ownedComment xmi:id="_WtjBoWEMEe2CUoAii3PDnw">
+                    <body>Add the hotel cost to the current total&#xD;
+     *&#xD;
+     * @param hotelCost the hotelCost to add</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_WtJY8WEMEe2CUoAii3PDnw" name="hotelCost">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_WtJY8mEMEe2CUoAii3PDnw" name="addOilChange" method="_WtiagGEMEe2CUoAii3PDnw">
+                  <ownedComment xmi:id="_WtjBomEMEe2CUoAii3PDnw">
+                    <body>Add the cost of an oil change to the current total&#xD;
+     *&#xD;
+     * @param oilChange the oilChange to add</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_WtJY82EMEe2CUoAii3PDnw" name="oilChange">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_WtJY9GEMEe2CUoAii3PDnw" name="addPurchasePrice" method="_WtiagmEMEe2CUoAii3PDnw">
+                  <ownedComment xmi:id="_WtjBo2EMEe2CUoAii3PDnw">
+                    <body>Add the purchase price to the current total&#xD;
+     *&#xD;
+     * @param purchasePrice the purchasePrice to add</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_WtJY9WEMEe2CUoAii3PDnw" name="purchasePrice">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_WtJY9mEMEe2CUoAii3PDnw" name="getFourTires" method="_WtiahGEMEe2CUoAii3PDnw">
+                  <ownedComment xmi:id="_WtjBpGEMEe2CUoAii3PDnw">
+                    <body>Returns the four tire cost&#xD;
+     *&#xD;
+     * @return the fourTires</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_WtJY92EMEe2CUoAii3PDnw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_WtJY-GEMEe2CUoAii3PDnw" name="getGrandTotalCost" method="_WtiahmEMEe2CUoAii3PDnw">
+                  <ownedComment xmi:id="_WtjBpWEMEe2CUoAii3PDnw">
+                    <body>The grand total cost of all expenses&#xD;
+     *&#xD;
+     * @return the grand total cost of all expenses</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_WtJY-WEMEe2CUoAii3PDnw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_WtJY-mEMEe2CUoAii3PDnw" name="getOilChange" method="_WtiaiGEMEe2CUoAii3PDnw">
+                  <ownedComment xmi:id="_WtjBpmEMEe2CUoAii3PDnw">
+                    <body>The cost of an oil change&#xD;
+     *&#xD;
+     * @return the oilChange</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_WtKAAGEMEe2CUoAii3PDnw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_WtKAAWEMEe2CUoAii3PDnw" name="setFourTires" visibility="private" method="_WtiaimEMEe2CUoAii3PDnw">
+                  <ownedComment xmi:id="_WtjBp2EMEe2CUoAii3PDnw">
+                    <body>Sets the cost of four tires&#xD;
+     *&#xD;
+     * @param fourTires the fourTires to set</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_WtKAAmEMEe2CUoAii3PDnw" name="fourTires">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_WtKAA2EMEe2CUoAii3PDnw" name="setFuelCost" visibility="private" method="_WtiajGEMEe2CUoAii3PDnw">
+                  <ownedComment xmi:id="_WtjBqGEMEe2CUoAii3PDnw">
+                    <body>Sets the fuel cost&#xD;
+     *&#xD;
+     * @param fuelCost the fuelCost to set</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_WtKABGEMEe2CUoAii3PDnw" name="fuelCost">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_WtKABWEMEe2CUoAii3PDnw" name="setKey" visibility="protected" method="_WtiajmEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WtKABmEMEe2CUoAii3PDnw" name="key">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_WtKACmEMEe2CUoAii3PDnw" name="setOilChange" visibility="private" method="_WtiakGEMEe2CUoAii3PDnw">
+                  <ownedComment xmi:id="_WtjBqWEMEe2CUoAii3PDnw">
+                    <body>Sets the cost of an oil change&#xD;
+     *&#xD;
+     * @param oilChange the oilChange to set</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_WtKAC2EMEe2CUoAii3PDnw" name="oilChange">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_WtKADGEMEe2CUoAii3PDnw" name="toString" method="_WtiakmEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WtKnEGEMEe2CUoAii3PDnw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Class" xmi:id="_WtLOIGEMEe2CUoAii3PDnw" name="TravelEntertainmentExpense">
+                <ownedComment xmi:id="_WtjBqmEMEe2CUoAii3PDnw">
+                  <body>Travel and entertainment expense&#xD;
+ *&#xD;
+@author dean grammas</body>
+                </ownedComment>
+                <ownedAttribute xmi:id="_Wtf-RGEMEe2CUoAii3PDnw" name="foodExpense" type="_WtEgfWEMEe2CUoAii3PDnw" isReadOnly="true" association="_WtjooGEMEe2CUoAii3PDnw"/>
+                <ownedAttribute xmi:id="_WtglUGEMEe2CUoAii3PDnw" name="hotelExpense" type="_WtFHjWEMEe2CUoAii3PDnw" isReadOnly="true" association="_Wtjoo2EMEe2CUoAii3PDnw"/>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WtiamGEMEe2CUoAii3PDnw" name="TravelEntertainmentExpense" specification="_WtLOIWEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WtiamWEMEe2CUoAii3PDnw" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtiammEMEe2CUoAii3PDnw" name="hotelExpense">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_Wtiam2EMEe2CUoAii3PDnw" name="foodExpense">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtianGEMEe2CUoAii3PDnw" type="_WtLOIGEMEe2CUoAii3PDnw" direction="return"/>
+                  <language>java</language>
+                  <body>super();&#xD;
+	this.setHotel(new HotelExpense(name, hotelExpense));&#xD;
+	this.setFood(new FoodExpense(name, foodExpense));&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WtianWEMEe2CUoAii3PDnw" name="getFood" specification="_WtL1MGEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WtianmEMEe2CUoAii3PDnw" type="_WtEgfWEMEe2CUoAii3PDnw" direction="return"/>
+                  <language>java</language>
+                  <body>return foodExpense;&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Wtian2EMEe2CUoAii3PDnw" name="getHotel" specification="_WtL1MWEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WtiaoGEMEe2CUoAii3PDnw" type="_WtFHjWEMEe2CUoAii3PDnw" direction="return"/>
+                  <language>java</language>
+                  <body>return hotelExpense;&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WtiaoWEMEe2CUoAii3PDnw" name="setFood" specification="_Wtc68mEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WtiaomEMEe2CUoAii3PDnw" name="foodExpense" type="_WtEgfWEMEe2CUoAii3PDnw"/>
+                  <language>java</language>
+                  <body>this.foodExpense = foodExpense;&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Wtiao2EMEe2CUoAii3PDnw" name="setHotel" specification="_Wtc69GEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WtiapGEMEe2CUoAii3PDnw" name="hotelExpense" type="_WtFHjWEMEe2CUoAii3PDnw"/>
+                  <language>java</language>
+                  <body>this.hotelExpense = hotelExpense;&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_WtjBkGEMEe2CUoAii3PDnw" name="toString" specification="_WtL1MmEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WtjBkWEMEe2CUoAii3PDnw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <language>java</language>
+                  <body>StringBuilder sb = new StringBuilder();&#xD;
+	&#xD;
+	sb.append(this.getClass());&#xD;
+	sb.append(&quot; this.getHotel()=&quot;).append(this.getHotel().toString()).append(&quot;\n&quot;);&#xD;
+	sb.append(&quot; this.getFood()=&quot;).append(this.getFood().toString()).append(&quot;\n&quot;);&#xD;
+	&#xD;
+	return sb.toString();&#xD;
+ </body>
+                </ownedBehavior>
+                <ownedOperation xmi:id="_WtLOIWEMEe2CUoAii3PDnw" name="TravelEntertainmentExpense" method="_WtiamGEMEe2CUoAii3PDnw">
+                  <eAnnotations xmi:id="_WtLOJWEMEe2CUoAii3PDnw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+                    <details xmi:id="_WtLOJmEMEe2CUoAii3PDnw" key="create"/>
+                  </eAnnotations>
+                  <ownedComment xmi:id="_WtjBq2EMEe2CUoAii3PDnw">
+                    <body>Constructor&#xD;
+     *&#xD;
+     * @param name         the name of the expense&#xD;
+     * @param hotelExpense the amount of the hotel expense&#xD;
+     * @param foodExpense  the amount of the food expense</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_WtLOImEMEe2CUoAii3PDnw" name="name">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtLOI2EMEe2CUoAii3PDnw" name="hotelExpense">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtLOJGEMEe2CUoAii3PDnw" name="foodExpense">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+                  </ownedParameter>
+                  <ownedParameter xmi:id="_WtLOJ2EMEe2CUoAii3PDnw" type="_WtLOIGEMEe2CUoAii3PDnw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_WtL1MGEMEe2CUoAii3PDnw" name="getFood" method="_WtianWEMEe2CUoAii3PDnw">
+                  <ownedComment xmi:id="_WtjBrGEMEe2CUoAii3PDnw">
+                    <body>Returns the &lt;code>FoodExpense&lt;/code>&#xD;
+     *&#xD;
+     * @return the foodExpense</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_Wtc68GEMEe2CUoAii3PDnw" type="_WtEgfWEMEe2CUoAii3PDnw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_WtL1MWEMEe2CUoAii3PDnw" name="getHotel" method="_Wtian2EMEe2CUoAii3PDnw">
+                  <ownedComment xmi:id="_WtjBrWEMEe2CUoAii3PDnw">
+                    <body>Returns the &lt;code>HotelExpense&lt;/code>&#xD;
+     *&#xD;
+     * @return the hotelExpense</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_Wtc68WEMEe2CUoAii3PDnw" type="_WtFHjWEMEe2CUoAii3PDnw" direction="return"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_WtL1MmEMEe2CUoAii3PDnw" name="toString" method="_WtjBkGEMEe2CUoAii3PDnw">
+                  <ownedParameter xmi:id="_WtL1M2EMEe2CUoAii3PDnw" direction="return">
+                    <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+                  </ownedParameter>
+                </ownedOperation>
+                <ownedOperation xmi:id="_Wtc68mEMEe2CUoAii3PDnw" name="setFood" method="_WtiaoWEMEe2CUoAii3PDnw">
+                  <ownedComment xmi:id="_WtjBrmEMEe2CUoAii3PDnw">
+                    <body>Sets the &lt;code>FoodExpense&lt;/code>&#xD;
+     *&#xD;
+     * @param foodExpense the &lt;code>FoodExpense&lt;/code> to set</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_Wtc682EMEe2CUoAii3PDnw" name="foodExpense" type="_WtEgfWEMEe2CUoAii3PDnw"/>
+                </ownedOperation>
+                <ownedOperation xmi:id="_Wtc69GEMEe2CUoAii3PDnw" name="setHotel" method="_Wtiao2EMEe2CUoAii3PDnw">
+                  <ownedComment xmi:id="_WtjBr2EMEe2CUoAii3PDnw">
+                    <body>Sets the &lt;code>HotelExpense&lt;/code>&#xD;
+     *&#xD;
+     * @param hotelExpense the &lt;code>HotelExpense&lt;/code> to set</body>
+                  </ownedComment>
+                  <ownedParameter xmi:id="_Wtc69WEMEe2CUoAii3PDnw" name="hotelExpense" type="_WtFHjWEMEe2CUoAii3PDnw"/>
+                </ownedOperation>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_WtjooGEMEe2CUoAii3PDnw" name="" memberEnd="_WtjooWEMEe2CUoAii3PDnw _Wtf-RGEMEe2CUoAii3PDnw">
+                <ownedEnd xmi:id="_WtjooWEMEe2CUoAii3PDnw" name="" type="_WtLOIGEMEe2CUoAii3PDnw" association="_WtjooGEMEe2CUoAii3PDnw"/>
+              </packagedElement>
+              <packagedElement xmi:type="uml:Association" xmi:id="_Wtjoo2EMEe2CUoAii3PDnw" name="" memberEnd="_WtjopGEMEe2CUoAii3PDnw _WtglUGEMEe2CUoAii3PDnw">
+                <ownedEnd xmi:id="_WtjopGEMEe2CUoAii3PDnw" name="" type="_WtLOIGEMEe2CUoAii3PDnw" association="_Wtjoo2EMEe2CUoAii3PDnw"/>
+              </packagedElement>
+            </packagedElement>
+            <packagedElement xmi:type="uml:Package" xmi:id="_Ws8koGEMEe2CUoAii3PDnw" name="common">
+              <packagedElement xmi:type="uml:Class" xmi:id="_Wtbs0GEMEe2CUoAii3PDnw" name="UniqueKeyCounter"/>
+            </packagedElement>
+          </packagedElement>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <profileApplication xmi:id="_UBj8cGEMEe2CUoAii3PDnw">
+      <eAnnotations xmi:id="_UBj8cWEMEe2CUoAii3PDnw" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile-Annotation_2-UMLLabProfile"/>
+      </eAnnotations>
+      <appliedProfile href="pathmap://UMLLAB_PROFILES/UMLLab.profile.uml#UMLLabProfile"/>
+    </profileApplication>
+  </uml:Model>
+  <UMLLabProfile:TargetLanguage xmi:id="_UBj8cmEMEe2CUoAii3PDnw" base_Package="_T9jmMGEMEe2CUoAii3PDnw">
+    <languageName>java</languageName>
+  </UMLLabProfile:TargetLanguage>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_WtG8vWEMEe2CUoAii3PDnw" base_Element="_WtG8u2EMEe2CUoAii3PDnw"/>
+  <UMLLabProfile:Annotations xmi:id="_WtG8vmEMEe2CUoAii3PDnw" base_Element="_WtG8u2EMEe2CUoAii3PDnw">
+    <annotations xmi:id="_WtG8v2EMEe2CUoAii3PDnw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_WtHjxGEMEe2CUoAii3PDnw" base_Element="_WtHjwmEMEe2CUoAii3PDnw"/>
+  <UMLLabProfile:Annotations xmi:id="_WtHjxWEMEe2CUoAii3PDnw" base_Element="_WtHjwmEMEe2CUoAii3PDnw">
+    <annotations xmi:id="_WtHjxmEMEe2CUoAii3PDnw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_WtHjyWEMEe2CUoAii3PDnw" base_Element="_WtHjx2EMEe2CUoAii3PDnw"/>
+  <UMLLabProfile:Annotations xmi:id="_WtHjymEMEe2CUoAii3PDnw" base_Element="_WtHjx2EMEe2CUoAii3PDnw">
+    <annotations xmi:id="_WtHjy2EMEe2CUoAii3PDnw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_WtKAB2EMEe2CUoAii3PDnw" base_Element="_WtKABWEMEe2CUoAii3PDnw"/>
+  <UMLLabProfile:Annotations xmi:id="_WtKACGEMEe2CUoAii3PDnw" base_Element="_WtKABWEMEe2CUoAii3PDnw">
+    <annotations xmi:id="_WtKACWEMEe2CUoAii3PDnw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_WtKnEWEMEe2CUoAii3PDnw" base_Element="_WtKADGEMEe2CUoAii3PDnw"/>
+  <UMLLabProfile:Annotations xmi:id="_WtKnEmEMEe2CUoAii3PDnw" base_Element="_WtKADGEMEe2CUoAii3PDnw">
+    <annotations xmi:id="_WtKnE2EMEe2CUoAii3PDnw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_WtL1NGEMEe2CUoAii3PDnw" base_Element="_WtL1MmEMEe2CUoAii3PDnw"/>
+  <UMLLabProfile:Annotations xmi:id="_WtL1NWEMEe2CUoAii3PDnw" base_Element="_WtL1MmEMEe2CUoAii3PDnw">
+    <annotations xmi:id="_WtL1NmEMEe2CUoAii3PDnw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:Reference xmi:id="_Wtbs0WEMEe2CUoAii3PDnw" base_Element="_Wtbs0GEMEe2CUoAii3PDnw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_WtewImEMEe2CUoAii3PDnw" base_Element="_WtewIWEMEe2CUoAii3PDnw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_WtfXMWEMEe2CUoAii3PDnw" base_Element="_WtfXMGEMEe2CUoAii3PDnw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_WtfXNWEMEe2CUoAii3PDnw" base_Element="_WtfXNGEMEe2CUoAii3PDnw">
+    <associatedElement xmi:type="uml:Operation" xmi:id="_WtfXNmEMEe2CUoAii3PDnw" name="getKey" method="_WthzhmEMEe2CUoAii3PDnw">
+      <ownedParameter xmi:id="_WtfXN2EMEe2CUoAii3PDnw" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </ownedParameter>
+    </associatedElement>
+  </UMLLabProfile:LegacyStyledElement>
+  <UMLLabProfile:Annotations xmi:id="_WtfXOGEMEe2CUoAii3PDnw" base_Element="_WtfXNmEMEe2CUoAii3PDnw">
+    <annotations xmi:id="_WtfXOWEMEe2CUoAii3PDnw" name="Override"/>
+  </UMLLabProfile:Annotations>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Wtf-QmEMEe2CUoAii3PDnw" base_Element="_Wtf-QWEMEe2CUoAii3PDnw"/>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_Wtf-RWEMEe2CUoAii3PDnw" base_Element="_Wtf-RGEMEe2CUoAii3PDnw">
+    <associatedElement xmi:type="uml:Operation" xmi:id="_Wtf-RmEMEe2CUoAii3PDnw" name="getFoodExpense" method="_WtialGEMEe2CUoAii3PDnw">
+      <ownedParameter xmi:id="_Wtf-R2EMEe2CUoAii3PDnw" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedParameter>
+    </associatedElement>
+  </UMLLabProfile:LegacyStyledElement>
+  <UMLLabProfile:LegacyStyledElement xmi:id="_WtglUWEMEe2CUoAii3PDnw" base_Element="_WtglUGEMEe2CUoAii3PDnw">
+    <associatedElement xmi:type="uml:Operation" xmi:id="_WtglUmEMEe2CUoAii3PDnw" name="getHotelExpense" method="_WtialmEMEe2CUoAii3PDnw">
+      <ownedParameter xmi:id="_WtglU2EMEe2CUoAii3PDnw" direction="return">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </ownedParameter>
+    </associatedElement>
+  </UMLLabProfile:LegacyStyledElement>
+  <uml:OpaqueBehavior xmi:id="_WthzhmEMEe2CUoAii3PDnw" name="getKey" specification="_WtfXNmEMEe2CUoAii3PDnw">
+    <ownedParameter xmi:id="_Wthzh2EMEe2CUoAii3PDnw" direction="return">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>return this.key;&#xD;
+ </body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_WtialGEMEe2CUoAii3PDnw" name="getFoodExpense" specification="_Wtf-RmEMEe2CUoAii3PDnw">
+    <ownedParameter xmi:id="_WtialWEMEe2CUoAii3PDnw" direction="return">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>return this.getFood().getExpense();&#xD;
+ </body>
+  </uml:OpaqueBehavior>
+  <uml:OpaqueBehavior xmi:id="_WtialmEMEe2CUoAii3PDnw" name="getHotelExpense" specification="_WtglUmEMEe2CUoAii3PDnw">
+    <ownedParameter xmi:id="_Wtial2EMEe2CUoAii3PDnw" direction="return">
+      <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+    </ownedParameter>
+    <language>java</language>
+    <body>return this.getHotel().getExpense();&#xD;
+ </body>
+  </uml:OpaqueBehavior>
+  <UMLLabProfile:Reference xmi:id="_WtjoomEMEe2CUoAii3PDnw" base_Element="_WtjooGEMEe2CUoAii3PDnw"/>
+  <UMLLabProfile:Reference xmi:id="_WtkPsGEMEe2CUoAii3PDnw" base_Element="_Wtjoo2EMEe2CUoAii3PDnw"/>
+</xmi:XMI>

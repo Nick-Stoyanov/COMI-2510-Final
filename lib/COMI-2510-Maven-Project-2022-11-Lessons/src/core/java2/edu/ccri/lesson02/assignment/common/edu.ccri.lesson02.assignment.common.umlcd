@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_0AaUIGELEe2CUoAii3PDnw">
+  <modelElement href="edu.ccri.lesson02.assignment.common.uml#_1_-_MGELEe2CUoAii3PDnw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_2AQE8WELEe2CUoAii3PDnw" targetItem="_2AQsCGELEe2CUoAii3PDnw" sourceItem="_2AQE8GELEe2CUoAii3PDnw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_2AQsAWELEe2CUoAii3PDnw" targetItem="_2AQsEGELEe2CUoAii3PDnw" sourceItem="_2AQsAGELEe2CUoAii3PDnw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_2AQsA2ELEe2CUoAii3PDnw" targetItem="_2AQsFmELEe2CUoAii3PDnw" sourceItem="_2AQsAmELEe2CUoAii3PDnw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_2AQsBWELEe2CUoAii3PDnw" targetItem="_2AQsHGELEe2CUoAii3PDnw" sourceItem="_2AQsBGELEe2CUoAii3PDnw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_2AQsB2ELEe2CUoAii3PDnw" targetItem="_2AQsIWELEe2CUoAii3PDnw" sourceItem="_2AQsBmELEe2CUoAii3PDnw"/>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_2AQE8GELEe2CUoAii3PDnw" sourceConnectionVisual="_2AQE8WELEe2CUoAii3PDnw" text="Unique key counter that all objects will implment. Intellectual property and the number of objects created are critical to the implementation.&#xD;&#xA;Therfore, all objects will implement this class and generate an unique object id. An object id is not the same as a class id. For example if there&#xD;&#xA;are 3 object instatiations of class then there will be 3 unique object ids.&#xD;&#xA; *&#xD;&#xA;@author dean grammas" item="_2AQsCGELEe2CUoAii3PDnw">
+    <modelElement href="edu.ccri.lesson02.assignment.common.uml#_2ABbemELEe2CUoAii3PDnw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_2AQsAGELEe2CUoAii3PDnw" sourceConnectionVisual="_2AQsAWELEe2CUoAii3PDnw" text="Sets the internal counter&#xD;&#xA;     *&#xD;&#xA;     * @param internalCounter the internalCounter to set" item="_2AQsEGELEe2CUoAii3PDnw">
+    <modelElement href="edu.ccri.lesson02.assignment.common.uml#_2ABbe2ELEe2CUoAii3PDnw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_2AQsAmELEe2CUoAii3PDnw" sourceConnectionVisual="_2AQsA2ELEe2CUoAii3PDnw" text="Constructor" item="_2AQsFmELEe2CUoAii3PDnw">
+    <modelElement href="edu.ccri.lesson02.assignment.common.uml#_2ABbfGELEe2CUoAii3PDnw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_2AQsBGELEe2CUoAii3PDnw" sourceConnectionVisual="_2AQsBWELEe2CUoAii3PDnw" text="Returns the key for the object&#xD;&#xA;     *&#xD;&#xA;     * @return the key for the object" item="_2AQsHGELEe2CUoAii3PDnw">
+    <modelElement href="edu.ccri.lesson02.assignment.common.uml#_2ABbfWELEe2CUoAii3PDnw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_2AQsBmELEe2CUoAii3PDnw" sourceConnectionVisual="_2AQsB2ELEe2CUoAii3PDnw" text="Returns the key for the object&#xD;&#xA;     *&#xD;&#xA;     * @param key the key for the object" item="_2AQsIWELEe2CUoAii3PDnw">
+    <modelElement href="edu.ccri.lesson02.assignment.common.uml#_2ABbfmELEe2CUoAii3PDnw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_2AQsCGELEe2CUoAii3PDnw" comments="_2AQE8GELEe2CUoAii3PDnw" targetConnectionVisual="_2AQE8WELEe2CUoAii3PDnw" name="UniqueKeyCounter" abstractClass="true">
+    <modelElement href="edu.ccri.lesson02.assignment.common.uml#_1__mQGELEe2CUoAii3PDnw"/>
+    <visualProperties xmi:id="_2AQsCWELEe2CUoAii3PDnw" position="230.0,242.0"/>
+    <visibility xmi:id="_2AQsCmELEe2CUoAii3PDnw" label="+"/>
+    <attributes xmi:id="_2AQsC2ELEe2CUoAii3PDnw" defaultValue="0" name="internalCounter" staticAttribute="true">
+      <modelElement href="edu.ccri.lesson02.assignment.common.uml#_2AA0YGELEe2CUoAii3PDnw"/>
+      <stereotypes xmi:id="_2AQsDGELEe2CUoAii3PDnw" name="LegacyStyledElement">
+        <modelElement href="edu.ccri.lesson02.assignment.common.uml#_2ABbcGELEe2CUoAii3PDnw"/>
+      </stereotypes>
+      <visibility xmi:id="_2AQsDWELEe2CUoAii3PDnw" label="#"/>
+      <cardinality xmi:id="_2AQsDmELEe2CUoAii3PDnw" label="1" max="1" min="1"/>
+      <type xmi:id="_2AQsD2ELEe2CUoAii3PDnw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_2AQsEGELEe2CUoAii3PDnw" comments="_2AQsAGELEe2CUoAii3PDnw" targetConnectionVisual="_2AQsAWELEe2CUoAii3PDnw" name="setInternalCounter" staticOperation="true">
+      <modelElement href="edu.ccri.lesson02.assignment.common.uml#_1__mSWELEe2CUoAii3PDnw"/>
+      <visibility xmi:id="_2AQsEWELEe2CUoAii3PDnw" label="-"/>
+      <cardinality xmi:id="_2AQsEmELEe2CUoAii3PDnw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_2AQsE2ELEe2CUoAii3PDnw" name="internalCounter">
+        <modelElement href="edu.ccri.lesson02.assignment.common.uml#_1__mSmELEe2CUoAii3PDnw"/>
+        <cardinality xmi:id="_2AQsFGELEe2CUoAii3PDnw" label="1" max="1" min="1"/>
+        <type xmi:id="_2AQsFWELEe2CUoAii3PDnw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_2AQsFmELEe2CUoAii3PDnw" comments="_2AQsAmELEe2CUoAii3PDnw" targetConnectionVisual="_2AQsA2ELEe2CUoAii3PDnw" name="UniqueKeyCounter">
+      <modelElement href="edu.ccri.lesson02.assignment.common.uml#_2AANUGELEe2CUoAii3PDnw"/>
+      <keywords xmi:id="_2AQsF2ELEe2CUoAii3PDnw" keyword="create"/>
+      <visibility xmi:id="_2AQsGGELEe2CUoAii3PDnw" label="#"/>
+      <cardinality xmi:id="_2AQsGWELEe2CUoAii3PDnw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_2AQsGmELEe2CUoAii3PDnw">
+        <modelElement href="edu.ccri.lesson02.assignment.common.uml#_2AANU2ELEe2CUoAii3PDnw"/>
+        <type xmi:id="_2AQsG2ELEe2CUoAii3PDnw" name="UniqueKeyCounter">
+          <modelElement href="edu.ccri.lesson02.assignment.common.uml#_1__mQGELEe2CUoAii3PDnw"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_2AQsHGELEe2CUoAii3PDnw" comments="_2AQsBGELEe2CUoAii3PDnw" targetConnectionVisual="_2AQsBWELEe2CUoAii3PDnw" abstractOperation="true" name="getKey">
+      <modelElement href="edu.ccri.lesson02.assignment.common.uml#_2AANVGELEe2CUoAii3PDnw"/>
+      <visibility xmi:id="_2AQsHWELEe2CUoAii3PDnw" label="+"/>
+      <cardinality xmi:id="_2AQsHmELEe2CUoAii3PDnw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_2AQsH2ELEe2CUoAii3PDnw">
+        <modelElement href="edu.ccri.lesson02.assignment.common.uml#_2AANVWELEe2CUoAii3PDnw"/>
+        <type xmi:id="_2AQsIGELEe2CUoAii3PDnw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_2AQsIWELEe2CUoAii3PDnw" comments="_2AQsBmELEe2CUoAii3PDnw" targetConnectionVisual="_2AQsB2ELEe2CUoAii3PDnw" abstractOperation="true" name="setKey">
+      <modelElement href="edu.ccri.lesson02.assignment.common.uml#_2AANVmELEe2CUoAii3PDnw"/>
+      <visibility xmi:id="_2AQsImELEe2CUoAii3PDnw" label="#"/>
+      <cardinality xmi:id="_2AQsI2ELEe2CUoAii3PDnw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_2AQsJGELEe2CUoAii3PDnw" name="key">
+        <modelElement href="edu.ccri.lesson02.assignment.common.uml#_2AANV2ELEe2CUoAii3PDnw"/>
+        <cardinality xmi:id="_2AQsJWELEe2CUoAii3PDnw" label="1" max="1" min="1"/>
+        <type xmi:id="_2AQsJmELEe2CUoAii3PDnw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>

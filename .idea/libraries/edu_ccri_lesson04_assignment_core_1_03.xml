@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="edu.ccri.lesson04.assignment.core-1.03">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/lib/edu.ccri.lesson04.assignment.core-1.03.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/lib/edu.ccri.lesson04.assignment.core-1.03.jar!/" />
+    </SOURCES>
+  </library>
+</component>

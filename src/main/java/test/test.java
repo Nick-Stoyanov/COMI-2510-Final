@@ -2,6 +2,7 @@ package test;
 
 import edu.ccri.lesson02.assignment.dashboard.Automobile;
 
+
 public class test
 {
 

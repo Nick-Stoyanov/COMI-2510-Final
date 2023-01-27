@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<com.yattasolutions.uml.diagrams.classifier:ClassDiagram xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:com.yattasolutions.diagrams="http://ns.yatta-solutions.com/umllab/diagrams/1.1.0" xmlns:com.yattasolutions.uml.diagrams.classifier="http://ns.yatta-solutions.com/umllab/diagrams/classifier/1.1.0" xmi:id="_TEs2IGENEe2CUoAii3PDnw">
+  <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQW1YGENEe2CUoAii3PDnw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_VQ1WgWENEe2CUoAii3PDnw" targetItem="_VQ19lGENEe2CUoAii3PDnw" sourceItem="_VQ1WgGENEe2CUoAii3PDnw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_VQ1Wg2ENEe2CUoAii3PDnw" targetItem="_VQ19rmENEe2CUoAii3PDnw" sourceItem="_VQ1WgmENEe2CUoAii3PDnw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_VQ1WhWENEe2CUoAii3PDnw" targetItem="_VQ19wGENEe2CUoAii3PDnw" sourceItem="_VQ1WhGENEe2CUoAii3PDnw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_VQ1Wh2ENEe2CUoAii3PDnw" targetItem="_VQ19xWENEe2CUoAii3PDnw" sourceItem="_VQ1WhmENEe2CUoAii3PDnw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_VQ19kWENEe2CUoAii3PDnw" targetItem="_VQ190WENEe2CUoAii3PDnw" sourceItem="_VQ19kGENEe2CUoAii3PDnw"/>
+  <edges xsi:type="com.yattasolutions.diagrams:ConnectionVisual" xmi:id="_VQ19k2ENEe2CUoAii3PDnw" targetItem="_VQ1912ENEe2CUoAii3PDnw" sourceItem="_VQ19kmENEe2CUoAii3PDnw"/>
+  <edges xsi:type="com.yattasolutions.uml.diagrams.classifier:GeneralizationVisual" xmi:id="_V0VFIGENEe2CUoAii3PDnw" sourceAnchor="0.0,144.0" targetAnchor="59.0,44.0" superClass="_V0VsMGENEe2CUoAii3PDnw" subClass="_VQ19lGENEe2CUoAii3PDnw">
+    <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQc8AGENEe2CUoAii3PDnw"/>
+    <visualProperties xmi:id="_V0VsNGENEe2CUoAii3PDnw" position="463.0,441.0"/>
+    <bendpoints xmi:id="_V2F_sGENEe2CUoAii3PDnw" sourceX="-134" targetY="199"/>
+  </edges>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_VQ1WgGENEe2CUoAii3PDnw" sourceConnectionVisual="_VQ1WgWENEe2CUoAii3PDnw" text="Sales trip&#xD;&#xA; *&#xD;&#xA;@author dean grammas" item="_VQ19lGENEe2CUoAii3PDnw">
+    <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQeKNGENEe2CUoAii3PDnw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_VQ1WgmENEe2CUoAii3PDnw" sourceConnectionVisual="_VQ1Wg2ENEe2CUoAii3PDnw" text="Constructor&#xD;&#xA;     *&#xD;&#xA;     * @param fromCity        - from city&#xD;&#xA;     * @param destinationCity - to city&#xD;&#xA;     * @param distance        - the distance between the two cities&#xD;&#xA;     * @param duration        - the duration (time) of travel between the two cities" item="_VQ19rmENEe2CUoAii3PDnw">
+    <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQeKNWENEe2CUoAii3PDnw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_VQ1WhGENEe2CUoAii3PDnw" sourceConnectionVisual="_VQ1WhWENEe2CUoAii3PDnw" text="Returns the distance between the cities&#xD;&#xA;     *&#xD;&#xA;     * @return the distance" item="_VQ19wGENEe2CUoAii3PDnw">
+    <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQeKNmENEe2CUoAii3PDnw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_VQ1WhmENEe2CUoAii3PDnw" sourceConnectionVisual="_VQ1Wh2ENEe2CUoAii3PDnw" text="Returns the from city&#xD;&#xA;     *&#xD;&#xA;     * @return the fromCity" item="_VQ19xWENEe2CUoAii3PDnw">
+    <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQeKN2ENEe2CUoAii3PDnw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_VQ19kGENEe2CUoAii3PDnw" sourceConnectionVisual="_VQ19kWENEe2CUoAii3PDnw" text="Sets the distance&#xD;&#xA;     *&#xD;&#xA;     * @param distance the distance to set" item="_VQ190WENEe2CUoAii3PDnw">
+    <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQeKOGENEe2CUoAii3PDnw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.diagrams:CommentVisual" xmi:id="_VQ19kmENEe2CUoAii3PDnw" sourceConnectionVisual="_VQ19k2ENEe2CUoAii3PDnw" text="Sets the from city&#xD;&#xA;     *&#xD;&#xA;     * @param fromCity the fromCity to set" item="_VQ1912ENEe2CUoAii3PDnw">
+    <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQeKOWENEe2CUoAii3PDnw"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_V0VsMGENEe2CUoAii3PDnw" name="UniqueKeyCounter" subclassedBy="_V0VFIGENEe2CUoAii3PDnw">
+    <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQcU8GENEe2CUoAii3PDnw"/>
+    <visualProperties xmi:id="_V0VsMWENEe2CUoAii3PDnw" position="-31.0,198.0" size="-1.0,-1.0"/>
+    <stereotypes xmi:id="_V0VsMmENEe2CUoAii3PDnw" name="Reference">
+      <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQcU8WENEe2CUoAii3PDnw"/>
+    </stereotypes>
+    <visibility xmi:id="_V0VsM2ENEe2CUoAii3PDnw" label="+"/>
+  </nodes>
+  <nodes xsi:type="com.yattasolutions.uml.diagrams.classifier:ClassifierVisual" xmi:id="_VQ19lGENEe2CUoAii3PDnw" comments="_VQ1WgGENEe2CUoAii3PDnw" targetConnectionVisual="_VQ1WgWENEe2CUoAii3PDnw" name="SalesTrip" generalizations="_V0VFIGENEe2CUoAii3PDnw">
+    <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQXccGENEe2CUoAii3PDnw"/>
+    <visualProperties xmi:id="_VQ19lWENEe2CUoAii3PDnw" position="162.0,297.0" size="-1.0,-1.0"/>
+    <visibility xmi:id="_VQ19lmENEe2CUoAii3PDnw" label="+"/>
+    <attributes xmi:id="_VQ19l2ENEe2CUoAii3PDnw" name="destinationCity">
+      <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQdjEGENEe2CUoAii3PDnw"/>
+      <visibility xmi:id="_VQ19mGENEe2CUoAii3PDnw" label="+"/>
+      <cardinality xmi:id="_VQ19mWENEe2CUoAii3PDnw" label="1" max="1" min="1"/>
+      <type xmi:id="_VQ19mmENEe2CUoAii3PDnw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VQ19m2ENEe2CUoAii3PDnw" name="distance">
+      <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQdjEWENEe2CUoAii3PDnw"/>
+      <stereotypes xmi:id="_VQ19nGENEe2CUoAii3PDnw" name="LegacyStyledElement">
+        <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQdjEmENEe2CUoAii3PDnw"/>
+      </stereotypes>
+      <visibility xmi:id="_VQ19nWENEe2CUoAii3PDnw" label="-"/>
+      <cardinality xmi:id="_VQ19nmENEe2CUoAii3PDnw" label="1" max="1" min="1"/>
+      <type xmi:id="_VQ19n2ENEe2CUoAii3PDnw" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VQ19oGENEe2CUoAii3PDnw" name="duration">
+      <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQdjE2ENEe2CUoAii3PDnw"/>
+      <visibility xmi:id="_VQ19oWENEe2CUoAii3PDnw" label="+"/>
+      <cardinality xmi:id="_VQ19omENEe2CUoAii3PDnw" label="1" max="1" min="1"/>
+      <type xmi:id="_VQ19o2ENEe2CUoAii3PDnw" name="double">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VQ19pGENEe2CUoAii3PDnw" name="fromCity">
+      <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQdjFGENEe2CUoAii3PDnw"/>
+      <stereotypes xmi:id="_VQ19pWENEe2CUoAii3PDnw" name="LegacyStyledElement">
+        <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQdjFWENEe2CUoAii3PDnw"/>
+      </stereotypes>
+      <visibility xmi:id="_VQ19pmENEe2CUoAii3PDnw" label="-"/>
+      <cardinality xmi:id="_VQ19p2ENEe2CUoAii3PDnw" label="1" max="1" min="1"/>
+      <type xmi:id="_VQ19qGENEe2CUoAii3PDnw" name="String">
+        <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </type>
+    </attributes>
+    <attributes xmi:id="_VQ19qWENEe2CUoAii3PDnw" name="key">
+      <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQdjFmENEe2CUoAii3PDnw"/>
+      <stereotypes xmi:id="_VQ19qmENEe2CUoAii3PDnw" name="LegacyStyledElement">
+        <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQdjF2ENEe2CUoAii3PDnw"/>
+      </stereotypes>
+      <visibility xmi:id="_VQ19q2ENEe2CUoAii3PDnw" label="-"/>
+      <cardinality xmi:id="_VQ19rGENEe2CUoAii3PDnw" label="1" max="1" min="1"/>
+      <type xmi:id="_VQ19rWENEe2CUoAii3PDnw" name="int">
+        <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+      </type>
+    </attributes>
+    <operations xmi:id="_VQ19rmENEe2CUoAii3PDnw" comments="_VQ1WgmENEe2CUoAii3PDnw" targetConnectionVisual="_VQ1Wg2ENEe2CUoAii3PDnw" name="SalesTrip">
+      <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQYDgmENEe2CUoAii3PDnw"/>
+      <keywords xmi:id="_VQ19r2ENEe2CUoAii3PDnw" keyword="create"/>
+      <visibility xmi:id="_VQ19sGENEe2CUoAii3PDnw" label="+"/>
+      <cardinality xmi:id="_VQ19sWENEe2CUoAii3PDnw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_VQ19smENEe2CUoAii3PDnw">
+        <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQYDiWENEe2CUoAii3PDnw"/>
+        <type xmi:id="_VQ19s2ENEe2CUoAii3PDnw" name="SalesTrip">
+          <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQXccGENEe2CUoAii3PDnw"/>
+        </type>
+      </outParameters>
+      <parameters xmi:id="_VQ19tGENEe2CUoAii3PDnw" name="fromCity">
+        <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQYDg2ENEe2CUoAii3PDnw"/>
+        <cardinality xmi:id="_VQ19tWENEe2CUoAii3PDnw" label="1" max="1" min="1"/>
+        <type xmi:id="_VQ19tmENEe2CUoAii3PDnw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_VQ19t2ENEe2CUoAii3PDnw" name="destinationCity">
+        <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQYDhGENEe2CUoAii3PDnw"/>
+        <cardinality xmi:id="_VQ19uGENEe2CUoAii3PDnw" label="1" max="1" min="1"/>
+        <type xmi:id="_VQ19uWENEe2CUoAii3PDnw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_VQ19umENEe2CUoAii3PDnw" name="duration">
+        <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQYDhWENEe2CUoAii3PDnw"/>
+        <cardinality xmi:id="_VQ19u2ENEe2CUoAii3PDnw" label="1" max="1" min="1"/>
+        <type xmi:id="_VQ19vGENEe2CUoAii3PDnw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+      <parameters xmi:id="_VQ19vWENEe2CUoAii3PDnw" name="distance">
+        <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQYDhmENEe2CUoAii3PDnw"/>
+        <cardinality xmi:id="_VQ19vmENEe2CUoAii3PDnw" label="1" max="1" min="1"/>
+        <type xmi:id="_VQ19v2ENEe2CUoAii3PDnw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_VQ19wGENEe2CUoAii3PDnw" comments="_VQ1WhGENEe2CUoAii3PDnw" targetConnectionVisual="_VQ1WhWENEe2CUoAii3PDnw" name="getDistance">
+      <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQYDimENEe2CUoAii3PDnw"/>
+      <visibility xmi:id="_VQ19wWENEe2CUoAii3PDnw" label="+"/>
+      <cardinality xmi:id="_VQ19wmENEe2CUoAii3PDnw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_VQ19w2ENEe2CUoAii3PDnw">
+        <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQYDi2ENEe2CUoAii3PDnw"/>
+        <type xmi:id="_VQ19xGENEe2CUoAii3PDnw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_VQ19xWENEe2CUoAii3PDnw" comments="_VQ1WhmENEe2CUoAii3PDnw" targetConnectionVisual="_VQ1Wh2ENEe2CUoAii3PDnw" name="getFromCity">
+      <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQYDjGENEe2CUoAii3PDnw"/>
+      <visibility xmi:id="_VQ19xmENEe2CUoAii3PDnw" label="+"/>
+      <cardinality xmi:id="_VQ19x2ENEe2CUoAii3PDnw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_VQ19yGENEe2CUoAii3PDnw">
+        <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQYDjWENEe2CUoAii3PDnw"/>
+        <type xmi:id="_VQ19yWENEe2CUoAii3PDnw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_VQ19ymENEe2CUoAii3PDnw" name="getKey">
+      <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQYDjmENEe2CUoAii3PDnw"/>
+      <stereotypes xmi:id="_VQ19y2ENEe2CUoAii3PDnw" name="LegacyStyledElement">
+        <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQYDkGENEe2CUoAii3PDnw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_VQ19zGENEe2CUoAii3PDnw" name="Annotations">
+        <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQYqkGENEe2CUoAii3PDnw"/>
+      </stereotypes>
+      <visibility xmi:id="_VQ19zWENEe2CUoAii3PDnw" label="+"/>
+      <cardinality xmi:id="_VQ19zmENEe2CUoAii3PDnw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_VQ19z2ENEe2CUoAii3PDnw">
+        <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQYDj2ENEe2CUoAii3PDnw"/>
+        <type xmi:id="_VQ190GENEe2CUoAii3PDnw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </outParameters>
+    </operations>
+    <operations xmi:id="_VQ190WENEe2CUoAii3PDnw" comments="_VQ19kGENEe2CUoAii3PDnw" targetConnectionVisual="_VQ19kWENEe2CUoAii3PDnw" name="setDistance">
+      <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQYqkmENEe2CUoAii3PDnw"/>
+      <visibility xmi:id="_VQ190mENEe2CUoAii3PDnw" label="+"/>
+      <cardinality xmi:id="_VQ1902ENEe2CUoAii3PDnw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_VQ191GENEe2CUoAii3PDnw" name="distance">
+        <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQYqk2ENEe2CUoAii3PDnw"/>
+        <cardinality xmi:id="_VQ191WENEe2CUoAii3PDnw" label="1" max="1" min="1"/>
+        <type xmi:id="_VQ191mENEe2CUoAii3PDnw" name="double">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#double"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_VQ1912ENEe2CUoAii3PDnw" comments="_VQ19kmENEe2CUoAii3PDnw" targetConnectionVisual="_VQ19k2ENEe2CUoAii3PDnw" name="setFromCity">
+      <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQYqlGENEe2CUoAii3PDnw"/>
+      <visibility xmi:id="_VQ192GENEe2CUoAii3PDnw" label="+"/>
+      <cardinality xmi:id="_VQ192WENEe2CUoAii3PDnw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_VQ192mENEe2CUoAii3PDnw" name="fromCity">
+        <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQYqlWENEe2CUoAii3PDnw"/>
+        <cardinality xmi:id="_VQ1922ENEe2CUoAii3PDnw" label="1" max="1" min="1"/>
+        <type xmi:id="_VQ193GENEe2CUoAii3PDnw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_VQ193WENEe2CUoAii3PDnw" name="setKey">
+      <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQYqlmENEe2CUoAii3PDnw"/>
+      <stereotypes xmi:id="_VQ193mENEe2CUoAii3PDnw" name="LegacyStyledElement">
+        <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQYqmGENEe2CUoAii3PDnw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_VQ1932ENEe2CUoAii3PDnw" name="Annotations">
+        <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQYqmWENEe2CUoAii3PDnw"/>
+      </stereotypes>
+      <visibility xmi:id="_VQ194GENEe2CUoAii3PDnw" label="#"/>
+      <cardinality xmi:id="_VQ194WENEe2CUoAii3PDnw" label="1" max="1" min="1"/>
+      <parameters xmi:id="_VQ194mENEe2CUoAii3PDnw" name="key">
+        <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQYql2ENEe2CUoAii3PDnw"/>
+        <cardinality xmi:id="_VQ1942ENEe2CUoAii3PDnw" label="1" max="1" min="1"/>
+        <type xmi:id="_VQ195GENEe2CUoAii3PDnw" name="int">
+          <modelElement href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#int"/>
+        </type>
+      </parameters>
+    </operations>
+    <operations xmi:id="_VQ195WENEe2CUoAii3PDnw" name="toString">
+      <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQYqm2ENEe2CUoAii3PDnw"/>
+      <stereotypes xmi:id="_VQ195mENEe2CUoAii3PDnw" name="LegacyStyledElement">
+        <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQYqnWENEe2CUoAii3PDnw"/>
+      </stereotypes>
+      <stereotypes xmi:id="_VQ1952ENEe2CUoAii3PDnw" name="Annotations">
+        <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQYqnmENEe2CUoAii3PDnw"/>
+      </stereotypes>
+      <visibility xmi:id="_VQ196GENEe2CUoAii3PDnw" label="+"/>
+      <cardinality xmi:id="_VQ196WENEe2CUoAii3PDnw" label="1" max="1" min="1"/>
+      <outParameters xmi:id="_VQ196mENEe2CUoAii3PDnw">
+        <modelElement href="edu.ccri.lesson02.assignment.sales.uml#_VQYqnGENEe2CUoAii3PDnw"/>
+        <type xmi:id="_VQ1962ENEe2CUoAii3PDnw" name="String">
+          <modelElement href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </type>
+      </outParameters>
+    </operations>
+  </nodes>
+</com.yattasolutions.uml.diagrams.classifier:ClassDiagram>
