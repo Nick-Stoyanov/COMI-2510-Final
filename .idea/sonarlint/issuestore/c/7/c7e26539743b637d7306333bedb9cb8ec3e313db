@@ -1,0 +1,15 @@
+
+a
+java:S1301´"KReplace this "switch" statement by "if" statements to increase readability.(ÑJ
+N
+java:S2629¹"7Use the built-in formatting to construct this argument.(½ãï¦
+J
+java:S2755„"3Disable access to external entities in XML parsing.(´€ğı
+T
+java:S59939"9Change the visibility of this constructor to "protected".(é³Œúÿÿÿÿ
+Y
+java:S1117ˆ"BRename "xmlStaxResults" which hides the field declared at line 52.(‰ˆ±õ
+Y
+java:S1117¨"BRename "xmlStaxResults" which hides the field declared at line 52.(’©»­
+X
+java:S3457¹"AFormat specifiers should be used instead of string concatenation.(½ãï¦

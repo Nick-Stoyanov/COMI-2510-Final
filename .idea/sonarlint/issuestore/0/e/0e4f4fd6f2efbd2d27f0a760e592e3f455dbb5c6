@@ -1,0 +1,23 @@
+
+‹
+java:S1319a"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(¸·Íúÿÿÿÿÿ
+w
+java:S2629T"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(¼ÜË­üÿÿÿÿ
+x
+java:S2629§"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(İÎèÃüÿÿÿÿ
+@
+java:S2629×"$Invoke method(s) only conditionally.(ó¸ñşùÿÿÿÿ
+O
+java:S5993*"9Change the visibility of this constructor to "protected".(ÎõùØ
+\
+java:S3457T"AFormat specifiers should be used instead of string concatenation.(¼ÜË­üÿÿÿÿ
+]
+java:S6201˜"FReplace this instanceof check and cast with 'instanceof String string'(Şú˜¨
+_
+java:S6201›"HReplace this instanceof check and cast with 'instanceof Integer integer'(ù»ŒÀ
+b
+java:S6201"FReplace this instanceof check and cast with 'instanceof Double double'(‹³ÃÌùÿÿÿÿ
+]
+java:S3457§"AFormat specifiers should be used instead of string concatenation.(İÎèÃüÿÿÿÿ
+\
+java:S2147ß"ECombine this catch with the one at line 219, which has the same body.(÷¹’ä

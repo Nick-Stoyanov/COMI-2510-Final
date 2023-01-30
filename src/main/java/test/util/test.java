@@ -1,4 +1,4 @@
-package test;
+package test.util;
 
 import edu.ccri.lesson02.assignment.dashboard.Automobile;
 

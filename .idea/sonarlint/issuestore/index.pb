@@ -1,5 +1,75 @@
 
 \
 ,.idea/inspectionProfiles/Project_Default.xml,4\9\496a238a6afa168dbaf6efd37bb459331589579c
+7
+pom.xml,4\4\442292b8a7efeabbe4cc176709b833b1792140ec
+˜
+hlib/COMI-2510-Maven-Project-2022-11-Lessons/src/core/java2/edu/ccri/lesson02/assignment/poi/PoiData.java,b\8\b81845a3b9a42798c1e8eed49c8bcf904512dc66
+³
+‚lib/COMI-2510-Maven-Project-2022-11-Lessons/src/core/java2/edu/ccri/lesson02/assignment/poi/edu.ccri.lesson02.assignment.poi.umlcd,7\4\74013b325dd3dade72460ad02c45a2c0bdbfc4e4
 j
-:.idea/libraries/edu_ccri_lesson04_assignment_core_1_02.xml,4\c\4cdfcbdc57cb79acd83c6b46db5c760734501a31
+:.idea/libraries/edu_ccri_lesson04_assignment_core_1_03.xml,5\2\52a32fca5b4b2cf9d669e89e01bff43aca542d3f
+¡
+qlib/COMI-2510-Maven-Project-2022-11-Lessons/src/core/java2/edu/ccri/lesson02/assignment/poi/PoiWriteDataList.java,0\e\0e4f4fd6f2efbd2d27f0a760e592e3f455dbb5c6
+ 
+plib/COMI-2510-Maven-Project-2022-11-Lessons/src/core/java2/edu/ccri/lesson02/assignment/poi/PoiReadDataList.java,b\c\bc1ef2f4b8638288966d86779caed22f3799a013
+Ÿ
+olib/COMI-2510-Maven-Project-2022-11-Lessons/src/core/java2/edu/ccri/lesson02/assignment/gauge/GaugeAmounts.java,9\3\931a20434ca490a57ea169395008895e84d2ec86
+˜
+hlib/COMI-2510-Maven-Project-2022-11-Lessons/src/core/java2/edu/ccri/lesson02/assignment/gauge/Gauge.java,a\3\a3759c7fe3cbd57680876e874116ab06d273f7a9
+œ
+llib/COMI-2510-Maven-Project-2022-11-Lessons/src/core/java2/edu/ccri/lesson02/assignment/gauge/FuelGauge.java,e\1\e1751aff372f6b56b6197aa27d91dbe66f2c4b97
+·
+†lib/COMI-2510-Maven-Project-2022-11-Lessons/src/core/java2/edu/ccri/lesson02/assignment/gauge/edu.ccri.lesson02.assignment.gauge.umlcd,8\2\82452dce80de5c5362e0d91097ebef26bd8e5d5c
+œ
+llib/COMI-2510-Maven-Project-2022-11-Lessons/src/core/java2/edu/ccri/lesson02/assignment/gauge/TireGauge.java,e\c\ec97c4b68b2cbfcf623cb9f83816fb715a7788f5
+›
+klib/COMI-2510-Maven-Project-2022-11-Lessons/src/core/java2/edu/ccri/lesson02/assignment/gauge/OilGauge.java,9\3\937207f22c3e3b61eb66986384c9ce4c4d437cd6
+œ
+llib/COMI-2510-Maven-Project-2022-11-Lessons/src/core/java2/edu/ccri/lesson02/assignment/sales/SalesTrip.java,4\2\4261c64e30133d9e4f3c4a18d82a6adc932563fb
+·
+†lib/COMI-2510-Maven-Project-2022-11-Lessons/src/core/java2/edu/ccri/lesson02/assignment/sales/edu.ccri.lesson02.assignment.sales.umlcd,3\6\367d355ad4278bce5643577591729f44934d8541
+¤
+tlib/COMI-2510-Maven-Project-2022-11-Lessons/src/core/java2/edu/ccri/lesson02/assignment/common/UniqueKeyCounter.java,a\2\a249d026a04e0b24ab8eda1cc14a9389ffecacc6
+¹
+ˆlib/COMI-2510-Maven-Project-2022-11-Lessons/src/core/java2/edu/ccri/lesson02/assignment/common/edu.ccri.lesson02.assignment.common.umlcd,a\e\ae41738640e7cd8ddb849b1b661b28d2530811f8
+ 
+plib/COMI-2510-Maven-Project-2022-11-Lessons/src/core/java2/edu/ccri/lesson02/assignment/expense/FoodExpense.java,2\4\24289ae35bf6b7a6364dc947f60b852f23e4aef0
+¢
+rlib/COMI-2510-Maven-Project-2022-11-Lessons/src/core/java2/edu/ccri/lesson02/assignment/expense/ExpenseHelper.java,a\1\a100e4e9a03921b0aa9b1d20de0d99a86ff3e760
+œ
+llib/COMI-2510-Maven-Project-2022-11-Lessons/src/core/java2/edu/ccri/lesson02/assignment/expense/Expense.java,0\c\0c1b6d37652e6e62af81704497fbb7375edb7690
+»
+Šlib/COMI-2510-Maven-Project-2022-11-Lessons/src/core/java2/edu/ccri/lesson02/assignment/expense/edu.ccri.lesson02.assignment.expense.umlcd,a\6\a656c6fa680810cfb23fcfca681177d85b8cbeb0
+©
+ylib/COMI-2510-Maven-Project-2022-11-Lessons/src/core/java2/edu/ccri/lesson02/assignment/expense/PurchasePriceExpense.java,f\e\fe0f47ac0d614300b9b33fefec4c3f4454677f79
+Ÿ
+olib/COMI-2510-Maven-Project-2022-11-Lessons/src/core/java2/edu/ccri/lesson02/assignment/expense/OilExpense.java,e\4\e439e510c7071dcb76bf3538b10a5684a4cee941
+¡
+qlib/COMI-2510-Maven-Project-2022-11-Lessons/src/core/java2/edu/ccri/lesson02/assignment/expense/HotelExpense.java,9\7\979ca6b07965d1486006874ae7e6b1453cf5433a
+ 
+plib/COMI-2510-Maven-Project-2022-11-Lessons/src/core/java2/edu/ccri/lesson02/assignment/expense/FuelExpense.java,7\e\7e97ae3aaa692358bf166872bfc8a8ac99d3df63
+¡
+qlib/COMI-2510-Maven-Project-2022-11-Lessons/src/core/java2/edu/ccri/lesson02/assignment/dashboard/Automobile.java,a\3\a3295201c2469ec60acc81ced58b0f68ebbcd4a8
+¯
+lib/COMI-2510-Maven-Project-2022-11-Lessons/src/core/java2/edu/ccri/lesson02/assignment/expense/TravelEntertainmentExpense.java,8\0\80a3b3ed446561369fb15eb28591efac3c6a2798
+¡
+qlib/COMI-2510-Maven-Project-2022-11-Lessons/src/core/java2/edu/ccri/lesson02/assignment/expense/TotalExpense.java,b\1\b17557fa240f316fbfdb2c6da05405c8db1a6b00
+ 
+plib/COMI-2510-Maven-Project-2022-11-Lessons/src/core/java2/edu/ccri/lesson02/assignment/expense/TireExpense.java,6\0\60400cfc59d4162921396b7e0dafb22d58eb418c
+¿
+Žlib/COMI-2510-Maven-Project-2022-11-Lessons/src/core/java2/edu/ccri/lesson02/assignment/dashboard/edu.ccri.lesson02.assignment.dashboard.umlcd,4\5\4535e7cc75f985ffd10ad0fb6793cc586b2a222c
+ 
+plib/COMI-2510-Maven-Project-2022-11-Lessons/src/core/java2/edu/ccri/lesson02/assignment/dashboard/Dashboard.java,0\2\02444de0578663dc45105d05ac8ae38cac443396
+ 
+plib/COMI-2510-Maven-Project-2022-11-Lessons/src/core/java4/edu/ccri/lesson04/assignment/xml/ReadXmlStaxData.java,c\7\c7e26539743b637d7306333bedb9cb8ec3e313db
+³
+‚lib/COMI-2510-Maven-Project-2022-11-Lessons/src/core/java4/edu/ccri/lesson04/assignment/xml/edu.ccri.lesson04.assignment.xml.umlcd,a\c\ac2e23791a097be2d054772e2f887dcb57fb72cd
+œ
+llib/COMI-2510-Maven-Project-2022-11-Lessons/src/core/java4/edu/ccri/lesson04/assignment/xml/XmlStaxData.java,5\0\5057db95c4c36070bed36b1867a542483adf36f9
+¡
+qlib/COMI-2510-Maven-Project-2022-11-Lessons/src/core/java4/edu/ccri/lesson04/assignment/xml/WriteXmlStaxData.java,1\f\1f3946972be28d91a55c982e42a7e3c2ed23b767
+w
+G.idea/sonarlint/issuestore/4/9/496a238a6afa168dbaf6efd37bb459331589579c,6\e\6e9644ddf83ab52f39902ecdbfdf4118285ac40c
+w
+G.idea/sonarlint/issuestore/4/c/4cdfcbdc57cb79acd83c6b46db5c760734501a31,2\4\244e39fec0e4c678cde60b587992ba0cce779a99

@@ -1,0 +1,15 @@
+
+x
+java:S2629†"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(¦ÓêÊýÿÿÿÿ
+N
+java:S2629»"7Use the built-in formatting to construct this argument.(ú¾Žû
+J
+java:S2755ø"3Disable access to external entities in XML parsing.(Ý‰Ë–
+T
+java:S5993_"9Change the visibility of this constructor to "protected".(¨Ë…ñúÿÿÿÿ
+]
+java:S3457†"AFormat specifiers should be used instead of string concatenation.(¦ÓêÊýÿÿÿÿ
+’
+java:S1130ñ"vRemove the declaration of thrown exception 'java.io.FileNotFoundException', as it cannot be thrown from method's body.(òúÈçùÿÿÿÿ
+X
+java:S3457»"AFormat specifiers should be used instead of string concatenation.(ú¾Žû
