@@ -5,6 +5,13 @@ package test.data;
  *
  * @author Nick Stoyanov
  */
-public class TestDataSourceFixed
+public abstract class TestDataSourceFixed extends TestDataSource
 {
+    /**
+     * Constructor
+     */
+    public TestDataSourceFixed()
+    {
+        super();
+    }
 }

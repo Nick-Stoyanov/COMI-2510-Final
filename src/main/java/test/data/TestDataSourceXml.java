@@ -5,6 +5,14 @@ package test.data;
  *
  * @author Nick Stoyanov
  */
-public class TestDataSourceXml
+public abstract class TestDataSourceXml extends TestDataSource
 {
+
+    /**
+     * Constructor
+     */
+    public TestDataSourceXml()
+    {
+        super();
+    }
 }
