@@ -144,7 +144,7 @@ public abstract class TestDataSourcePoi extends TestDataSource
     /**
      * Method to stage the test data with data that is from an Excel file.
      */
-    protected void stageTestData()
+    public void stageTestData()
     {
         PoiReadDataList poiReadDataList = new PoiReadDataList(this.getFileName(), getWorksheetNumber());
 
