@@ -135,8 +135,6 @@ e
 .src/main/java/test/data/poi/AutomobilePoi.java,a\3\a3953efaa8be496ee9a7d599288257ad6cc81f2d
 w
 G.idea/sonarlint/issuestore/7/e/7e97ae3aaa692358bf166872bfc8a8ac99d3df63,e\9\e923376162a989e09053671b0f6f014d67baaefa
-e
-5src/main/java/test/data/poi/AutomobileExpensePoi.java,4\8\48a95a2c88c1d35e833744dae88581d3bb14c650
 w
 G.idea/sonarlint/issuestore/b/b/bb7a79155f56e2ddb0f4e9a27cfc24a973555f6f,9\8\98c90061bf0ecc32b4e37be2b66687347e535208
 w
