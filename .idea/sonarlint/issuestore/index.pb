@@ -203,8 +203,6 @@ w
 G.idea/sonarlint/issuestore/b/b/bb99418467cea341014cc61cf4e3ec86d5406aaa,2\0\20b0a919fad520c08f0f6fea27fddfb469e9588e
 w
 G.idea/sonarlint/issuestore/8/2/823a0681d662f58ffece47133439976cb22e8c7c,1\8\18e775e5028e4da52d5b40e49110f6a885f6e95b
-g
-7src/main/java/test/data/list/AutomobileExpenseList.java,f\3\f3f237280703e4ac48108058c7ccbd40b25ae29e
 [
 +src/main/java/test/data/TestDataSource.java,e\e\eeb35d56faf6bdc7635aec4724d75ebd1040ebe3
 t

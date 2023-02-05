@@ -3,6 +3,8 @@ package test.data.helper;
 import edu.ccri.lesson02.assignment.sales.SalesTrip;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.List;
 
 /**
  * 1/30/2023
@@ -29,7 +31,7 @@ public class SalesTripHelper
      * @param duration        duration
      * @param distance        distance
      */
-    public static void addExpenses(ArrayList<SalesTrip> testDataList,
+    public static void addExpenses(List<SalesTrip> testDataList,
                                    String fromCity,
                                    String destinationCity,
                                    double duration,
@@ -46,7 +48,7 @@ public class SalesTripHelper
      * @param testDataList test data list
      * @return the total distance
      */
-    public static double getTotalSalesTripDistance(ArrayList<SalesTrip> testDataList)
+    public static double getTotalSalesTripDistance(List<SalesTrip> testDataList)
     {
         double total = 0;
 
@@ -63,7 +65,7 @@ public class SalesTripHelper
      * @param testDataList test data list
      * @return the total duration
      */
-    public static double getTotalSalesTripDuration(ArrayList<SalesTrip> testDataList)
+    public static double getTotalSalesTripDuration(List<SalesTrip> testDataList)
     {
         double total = 0;
 

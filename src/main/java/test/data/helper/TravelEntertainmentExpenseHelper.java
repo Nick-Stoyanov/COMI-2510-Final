@@ -5,6 +5,9 @@ import edu.ccri.lesson02.assignment.expense.HotelExpense;
 import edu.ccri.lesson02.assignment.expense.TravelEntertainmentExpense;
 
 import java.util.ArrayList;
+import java.util.List;
+import java.util.List;
+import java.util.List;
 
 /**
  * 1/30/2023
@@ -30,7 +33,7 @@ public class TravelEntertainmentExpenseHelper
      * @param hotelExpense the hotel cost
      * @param foodExpense  the food cost
      */
-    public static void addExpenses(ArrayList<TravelEntertainmentExpense> testDataList,
+    public static void addExpenses(List<TravelEntertainmentExpense> testDataList,
                                    String name,
                                    double hotelExpense,
                                    double foodExpense)
@@ -46,17 +49,17 @@ public class TravelEntertainmentExpenseHelper
      * @param name         the name of the expense
      * @return the food expense
      */
-    public static FoodExpense getFoodExpense(ArrayList<TravelEntertainmentExpense> testDataList,
+    public static FoodExpense getFoodExpense(List<TravelEntertainmentExpense> testDataList,
                                              String name)
     {
         TravelEntertainmentExpense travel;
-        FoodExpense expense = null;
+        FoodExpense expense;
 
-        for (int i = 0; i < testDataList.size(); i++)
+        for (TravelEntertainmentExpense travelEntertainmentExpense : testDataList)
         {
-            travel = testDataList.get(i);
+            travel = travelEntertainmentExpense;
             expense = travel.getFood();
-            if (expense.getName().equals(name) && expense instanceof FoodExpense)
+            if (expense.getName().equals(name))
             {
                 return expense;
             }
@@ -71,18 +74,18 @@ public class TravelEntertainmentExpenseHelper
      * @param name         the name of the expense
      * @return the hotel expense
      */
-    public static HotelExpense getHotelExpense(ArrayList<TravelEntertainmentExpense> testDataList,
+    public static HotelExpense getHotelExpense(List<TravelEntertainmentExpense> testDataList,
                                                String name)
     {
         TravelEntertainmentExpense travel;
-        HotelExpense expense = null;
+        HotelExpense expense;
 
-        for (int i = 0; i < testDataList.size(); i++)
+        for (TravelEntertainmentExpense travelEntertainmentExpense : testDataList)
         {
-            travel = testDataList.get(i);
+            travel = travelEntertainmentExpense;
             expense = travel.getHotel();
 
-            if (expense.getName().equals(name) && expense instanceof HotelExpense)
+            if (expense.getName().equals(name))
             {
                 return expense;
             }
