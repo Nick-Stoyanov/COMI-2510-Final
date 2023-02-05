@@ -1,5 +1,7 @@
 package test.data;
 
+import edu.ccri.lesson02.assignment.common.UniqueKeyCounter;
+
 /**
  * 1/30/2023
  *
@@ -14,5 +16,6 @@ public abstract class TestDataSourceXml extends TestDataSource
     public TestDataSourceXml()
     {
         super();
+        this.setKey(UniqueKeyCounter.getInternalCounter());
     }
 }

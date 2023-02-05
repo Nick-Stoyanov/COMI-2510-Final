@@ -77,7 +77,7 @@ public class AutomobileExpenseHelper
      * @param name         the name of the expense
      * @return the oil Expense
      */
-    public Expense getOilExpense(List<Expense> testDataList, String name)
+    public static Expense getOilExpense(List<Expense> testDataList, String name)
     {
         Expense expense = null;
 

@@ -20,7 +20,7 @@ public class AutomobileExpenseList
      */
     public AutomobileExpenseList()
     {
-        super();
+        this(true);
     }
 
     /**
@@ -30,7 +30,6 @@ public class AutomobileExpenseList
      */
     public AutomobileExpenseList(boolean create)
     {
-        super();
         if (create)
         {
             this.testDataList = new ArrayList<Automobile>();

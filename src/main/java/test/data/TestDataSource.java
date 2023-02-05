@@ -41,6 +41,7 @@ public abstract class TestDataSource extends UniqueKeyCounter implements TestDat
     public TestDataSource()
     {
         super();
+        this.setKey(UniqueKeyCounter.getInternalCounter());
     }
 
 

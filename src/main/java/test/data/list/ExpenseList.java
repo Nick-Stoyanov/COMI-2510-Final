@@ -20,7 +20,7 @@ public class ExpenseList
      */
     public ExpenseList()
     {
-        super();
+        this(true);
     }
 
     /**
@@ -30,8 +30,6 @@ public class ExpenseList
      */
     public ExpenseList(Boolean create)
     {
-        super();
-
         if (create)
         {
             this.testDataList = new ArrayList<Expense>();

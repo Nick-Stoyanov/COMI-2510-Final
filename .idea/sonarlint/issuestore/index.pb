@@ -79,12 +79,8 @@ w
 G.idea/sonarlint/issuestore/a/2/a249d026a04e0b24ab8eda1cc14a9389ffecacc6,c\4\c4ddce0acca95138496452f5ddedc7aae0d4da01
 w
 G.idea/sonarlint/issuestore/5/2/52a32fca5b4b2cf9d669e89e01bff43aca542d3f,4\6\46abd51227b56771445f431224f90ebdb96e45eb
-r
-Bsrc/main/java/test/data/fixed/TravelEntertainmentExpenseFixed.java,5\5\5537941389bdcdf1caa95fdd2c9fe304668806f9
 w
 G.idea/sonarlint/issuestore/8/0/80a3b3ed446561369fb15eb28591efac3c6a2798,5\0\509854fac788c0205ea851acde76d9d566fb98f5
-a
-1src/main/java/test/data/fixed/SalesTripFixed.java,5\a\5aad3318492495645741590641e3fe1dfc4754bf
 w
 G.idea/sonarlint/issuestore/a/c/ac2e23791a097be2d054772e2f887dcb57fb72cd,b\5\b5989ceb4e90476d459dac8560d46a4a51b356af
 w
@@ -141,8 +137,6 @@ w
 G.idea/sonarlint/issuestore/7/e/7e97ae3aaa692358bf166872bfc8a8ac99d3df63,e\9\e923376162a989e09053671b0f6f014d67baaefa
 e
 5src/main/java/test/data/poi/AutomobileExpensePoi.java,4\8\48a95a2c88c1d35e833744dae88581d3bb14c650
-p
-@src/main/java/test/data/list/TravelEntertainmentExpenseList.java,e\6\e6974f92debf8ee4601b63a0d62ed47f82bdb811
 w
 G.idea/sonarlint/issuestore/b/b/bb7a79155f56e2ddb0f4e9a27cfc24a973555f6f,9\8\98c90061bf0ecc32b4e37be2b66687347e535208
 w
@@ -167,10 +161,6 @@ w
 G.idea/sonarlint/issuestore/9/5/95affb12ac61d8ad3714a1d117b3c4c7e9679c2e,3\6\36c9db62a48ec838bf7463f5ab9715da71801a7b
 w
 G.idea/sonarlint/issuestore/2/8/288b4a3416c46817e24700b4bb76d645827544a6,4\f\4f39a6875d656739eb704cfc1076154cc2c9e8e8
-^
-.src/main/java/test/data/TestDataSourceXml.java,1\0\108c026d936ec9d3ffdbdba8726a7c159ceef610
-`
-0src/main/java/test/data/TestDataSourceFixed.java,e\e\eefcf29f0858412a1621ff8140d9a0d6398d1726
 w
 G.idea/sonarlint/issuestore/4/7/473a532a084b21340ec4b3b6b24cb7df9d91ac98,b\0\b0cecaeff0d5d1841dc5a2e87f9b36c6147eb222
 w
@@ -199,12 +189,8 @@ w
 G.idea/sonarlint/issuestore/b/b/bb99418467cea341014cc61cf4e3ec86d5406aaa,2\0\20b0a919fad520c08f0f6fea27fddfb469e9588e
 w
 G.idea/sonarlint/issuestore/8/2/823a0681d662f58ffece47133439976cb22e8c7c,1\8\18e775e5028e4da52d5b40e49110f6a885f6e95b
-[
-+src/main/java/test/data/TestDataSource.java,e\e\eeb35d56faf6bdc7635aec4724d75ebd1040ebe3
 t
 Dsrc/main/java/test/data/broker/TravelEntertainmentExpenseBroker.java,a\0\a069c695e9509cd07f5e72e82cc06944d01fb17c
-^
-.src/main/java/test/data/TestDataSourcePoi.java,7\7\7745e8ef7769c6feb6b643237b10ca7b7a239b52
 k
 ;src/main/java/test/data/broker/AutomobileExpenseBroker.java,9\e\9e2d4b565ed5ed2334fa3da734ed201519f155aa
 c

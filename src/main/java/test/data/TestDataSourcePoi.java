@@ -1,5 +1,6 @@
 package test.data;
 
+import edu.ccri.lesson02.assignment.common.UniqueKeyCounter;
 import edu.ccri.lesson02.assignment.poi.PoiData;
 import edu.ccri.lesson02.assignment.poi.PoiReadDataList;
 import org.apache.logging.log4j.LogManager;
@@ -26,6 +27,7 @@ public abstract class TestDataSourcePoi extends TestDataSource
     public TestDataSourcePoi()
     {
         super();
+        this.setKey(UniqueKeyCounter.getInternalCounter());
     }
 
     /**
