@@ -4,7 +4,7 @@ import edu.ccri.lesson02.assignment.expense.Expense;
 import test.data.TestDataSourceFixed;
 import test.data.broker.AutomobileExpenseBroker;
 import test.data.broker.TestDataSourceBroker;
-import test.data.helper.AutomobileHelper;
+import test.data.helper.AutomobileExpenseHelper;
 import test.data.list.ExpenseList;
 
 import java.util.ArrayList;
@@ -29,8 +29,15 @@ public class AutomobileExpenseFixed extends TestDataSourceFixed implements Autom
         super();
     }
 
-    public Expense getFuelExpense(String name){
-        return null;
+    /**
+     * Returns the fuel expense
+     *
+     * @param name the name of the expense
+     * @return the fuel expense
+     */
+    public Expense getFuelExpense(String name)
+    {
+        return AutomobileExpenseHelper.getFuelExpense(this.getTestDataList(),name);
     }
 
 

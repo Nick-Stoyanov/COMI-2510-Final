@@ -7,4 +7,5 @@ package test.data.list;
  */
 public class SalesTripList
 {
+
 }

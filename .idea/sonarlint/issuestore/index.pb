@@ -75,8 +75,6 @@ Q
 !src/main/java/test/util/test.java,8\c\8ce00bc8f0b82c1d3a3a207751a4ebd617c905bd
 w
 G.idea/sonarlint/issuestore/2/4/24289ae35bf6b7a6364dc947f60b852f23e4aef0,2\d\2d42fb6ee0650a48bda032658fa70600bbeb78b2
-]
--src/main/java/test/data/list/ExpenseList.java,8\f\8f6b834d22eea17a969f2dc96931fd288cb6222c
 w
 G.idea/sonarlint/issuestore/a/2/a249d026a04e0b24ab8eda1cc14a9389ffecacc6,c\4\c4ddce0acca95138496452f5ddedc7aae0d4da01
 w
@@ -145,8 +143,6 @@ e
 5src/main/java/test/data/poi/AutomobileExpensePoi.java,4\8\48a95a2c88c1d35e833744dae88581d3bb14c650
 p
 @src/main/java/test/data/list/TravelEntertainmentExpenseList.java,e\6\e6974f92debf8ee4601b63a0d62ed47f82bdb811
-_
-/src/main/java/test/data/list/SalesTripList.java,e\5\e50a2053510223e58b2897e87ded063766a9000d
 w
 G.idea/sonarlint/issuestore/b/b/bb7a79155f56e2ddb0f4e9a27cfc24a973555f6f,9\8\98c90061bf0ecc32b4e37be2b66687347e535208
 w
