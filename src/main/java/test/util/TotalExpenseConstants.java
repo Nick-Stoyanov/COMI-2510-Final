@@ -79,11 +79,17 @@ public class TotalExpenseConstants
      *
      * @param prefixValue the prefix value
      * @param nameSuffix  the name of the suffix property
-     * @return the value for the named propertly appended to the provided prefix value
+     * @return the value for the named property appended to the provided prefix value
      */
     public static String getPropertyAppend(String prefixValue, String nameSuffix)
     {
-        return null;
+        String str = TotalExpenseConstants.getProperty(nameSuffix);
+        StringBuilder prop = new StringBuilder();
+        prop.append(prefixValue);
+        prop.append(str);
+        logger.debug("getPropertyAppend()" + "\nvalue= " + prefixValue + "\nname= " + nameSuffix + "\nprop= " + prop.toString());
+        return prop.toString();
+
     }
 
     /**
@@ -96,10 +102,18 @@ public class TotalExpenseConstants
     public static String getPropertyConcat(String namePrefix,
                                            String nameSuffix)
     {
-        return null;
+        StringBuilder prop = new StringBuilder();
+        prop.append(TotalExpenseConstants.getProperty(namePrefix));
+        prop.append(TotalExpenseConstants.getProperty(nameSuffix));
+        logger.debug("getPropertyConcat()" + "\nnamePrefix" + namePrefix + "\nnameSuffix" + nameSuffix + "prop= " + prop.toString());
+
+        return prop.toString();
+
     }
 
     /**
+     * NOT NEEDED, hence the null return value
+     * <p>
      * Returns the value for the named property appended to the provided prefixValue
      *
      * @param suffixValue the suffix value
