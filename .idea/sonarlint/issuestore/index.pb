@@ -9,12 +9,8 @@ w
 G.idea/sonarlint/issuestore/5/2/52a32fca5b4b2cf9d669e89e01bff43aca542d3f,4\6\46abd51227b56771445f431224f90ebdb96e45eb
 w
 G.idea/sonarlint/issuestore/6/e/6e9644ddf83ab52f39902ecdbfdf4118285ac40c,4\2\4291a6ab95c696f29dcedea66516b99a0fd0f28a
-m
-=src/main/java/test/data/xml/AutomobileExpenseXmlReadStax.java,8\2\82fe2630c32c74e13561e24dc5d1c1cb7e845581
 w
 G.idea/sonarlint/issuestore/4/4/442292b8a7efeabbe4cc176709b833b1792140ec,8\6\863e0292fd7e9b3e74dafd6cc01f73ba76346482
-e
-5src/main/java/test/data/xml/AutomobileExpenseXml.java,9\4\9453b6efba89970a9c0443e4e2a11782b161b33e
 w
 G.idea/sonarlint/issuestore/b/b/bb7a79155f56e2ddb0f4e9a27cfc24a973555f6f,9\8\98c90061bf0ecc32b4e37be2b66687347e535208
 w
@@ -81,12 +77,8 @@ i
 0src/main/java/test/util/TotalExpenseFactory.java,6\b\6b7d103b01aad692c55a968d7e024a85c5ae088a
 i
 9src/main/java/test/util/TotalExpenseTestCalculations.java,c\e\ced463377491142cf5eddb6b68ed062c9f42be40
-a
-1src/main/java/test/util/TotalExpenseTestData.java,5\1\5162ba8275a5a371385bc4de75d0b154189b6cd4
 i
 9src/main/java/test/util/TotalExpenseWriteDataFilePoi.java,c\d\cd9abebc1d91a40ff2a2c7b0b018534423ea5e7f
-d
-4src/main/java/test/util/TotalExpenseTestUtility.java,e\1\e1778da9b29daf2fc468d9dc2122d30c46c976bc
 d
 4src/main/java/test/data/broker/AutomobileBroker.java,6\d\6d254a9a56391968e809fc0e5d522a2f716b9107
 t
@@ -101,10 +93,6 @@ r
 Bsrc/main/java/test/data/fixed/TravelEntertainmentExpenseFixed.java,5\5\5537941389bdcdf1caa95fdd2c9fe304668806f9
 p
 @src/main/java/test/data/list/TravelEntertainmentExpenseList.java,e\6\e6974f92debf8ee4601b63a0d62ed47f82bdb811
-a
-1src/main/java/test/data/fixed/SalesTripFixed.java,5\a\5aad3318492495645741590641e3fe1dfc4754bf
-_
-/src/main/java/test/data/list/SalesTripList.java,e\5\e50a2053510223e58b2897e87ded063766a9000d
 ^
 .src/main/java/test/data/TestDataSourceXml.java,1\0\108c026d936ec9d3ffdbdba8726a7c159ceef610
 ^
