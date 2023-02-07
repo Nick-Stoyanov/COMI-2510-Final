@@ -6,7 +6,9 @@ import edu.ccri.lesson02.assignment.poi.PoiData;
 import test.data.TestDataSourcePoi;
 import test.data.broker.AutomobileExpenseBroker;
 import test.data.broker.TestDataSourceBroker;
+import test.data.helper.AutomobileExpenseHelper;
 import test.data.list.ExpenseList;
+import test.util.TotalExpenseConstants;
 
 import java.util.ArrayList;
 
@@ -22,7 +24,7 @@ public class AutomobileExpensePoi extends TestDataSourcePoi implements Automobil
     /**
      * Test data list
      */
-    private ExpenseList testDataList;
+    private ExpenseList testDataList = new ExpenseList();
 
     /**
      * Constructor
@@ -42,7 +44,8 @@ public class AutomobileExpensePoi extends TestDataSourcePoi implements Automobil
     @Override
     protected String getFileName()
     {
-        return null;
+        String name = TotalExpenseConstants.getPropertyConcat("a", "a");
+        return name;
     }
 
     /**
@@ -53,7 +56,7 @@ public class AutomobileExpensePoi extends TestDataSourcePoi implements Automobil
     @Override
     protected int getWorksheetNumber()
     {
-        return 0;
+        return 1;
     }
 
     /**
@@ -65,6 +68,36 @@ public class AutomobileExpensePoi extends TestDataSourcePoi implements Automobil
     @Override
     protected void handlePoiDataRowResults(ArrayList<PoiData> rowDataList)
     {
+        PoiData data = null;
+        int columnNumber = 0;
+
+        String name = null;
+        double purchasePrice = 0;
+        double oilChange = 0;
+        double gasPerUnit = 0;
+        double fourTires = 0;
+
+        data = rowDataList.get(columnNumber);
+        name = poiDataValueToString(columnNumber, data);
+        columnNumber++;
+
+        data = rowDataList.get(columnNumber);
+        purchasePrice = poiDataValueToDouble(columnNumber, data);
+        columnNumber++;
+
+        data = rowDataList.get(columnNumber);
+        oilChange = poiDataValueToDouble(columnNumber, data);
+        columnNumber++;
+
+        data = rowDataList.get(columnNumber);
+        gasPerUnit = poiDataValueToDouble(columnNumber, data);
+        columnNumber++;
+
+        data = rowDataList.get(columnNumber);
+        fourTires = poiDataValueToDouble(columnNumber, data);
+
+
+        AutomobileExpenseHelper.addExpense(this.getTestDataList(), name, purchasePrice, oilChange, gasPerUnit, fourTires);
 
     }
 
@@ -76,6 +109,19 @@ public class AutomobileExpensePoi extends TestDataSourcePoi implements Automobil
     @Override
     public ArrayList<Expense> getTestDataList()
     {
-        return null;
+        return this.testDataList.getTestDataList();
+    }
+
+    /**
+     * Returns a string representation of the object
+     *
+     * @return a string representation of the object
+     */
+    @Override
+    public String toString()
+    {
+        return "AutomobileExpensePoi{" +
+                "testDataList=" + testDataList +
+                '}';
     }
 }
