@@ -62,8 +62,8 @@ public class TotalExpenseConstants
     /**
      * Returns the value for the named property
      *
-     * @param name
-     * @return
+     * @param name the name
+     * @return the property value
      */
     public static String getProperty(String name)
     {
@@ -84,6 +84,7 @@ public class TotalExpenseConstants
     public static String getPropertyAppend(String prefixValue, String nameSuffix)
     {
         String str = TotalExpenseConstants.getProperty(nameSuffix);
+
         StringBuilder prop = new StringBuilder();
         prop.append(prefixValue);
         prop.append(str);
