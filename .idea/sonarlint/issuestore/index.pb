@@ -57,8 +57,6 @@ e
 5src/main/java/test/data/xml/SalesTripXmlReadStax.java,4\4\448362e4d0484e0ccb43fa3d56eabec8c7070cd7
 \
 ,.idea/inspectionProfiles/Project_Default.xml,4\9\496a238a6afa168dbaf6efd37bb459331589579c
-X
-(src/main/java/test/TotalExpenseTest.java,6\2\62028ff2711ec0f7e7605c3aa5ac40b1cc041c79
 ^
 .src/main/java/test/data/poi/AutomobilePoi.java,a\3\a3953efaa8be496ee9a7d599288257ad6cc81f2d
 h
