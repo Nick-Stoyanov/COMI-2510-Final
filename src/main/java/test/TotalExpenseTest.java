@@ -1,5 +1,6 @@
 package test;
 
+import test.util.AssignmentDetails;
 import test.util.TotalExpenseTestData;
 import test.util.TotalExpenseTestUtility;
 
@@ -49,6 +50,19 @@ public class TotalExpenseTest
     {
         StringBuilder sb = new StringBuilder();
         TotalExpenseTestUtility totalExpenseTestUtility = new TotalExpenseTestUtility();
+
+        totalExpenseTestUtility.gloriousArgs(args);
+        sb.append(args);
+
+        AssignmentDetails assignmentDetails = new AssignmentDetails();
+        assignmentDetails.loadProperties(totalExpenseTestUtility.getFullyQualifiedInputPath());
+        sb.append("fully qualified path: " + totalExpenseTestUtility.getFullyQualifiedInputPath());
+
+        totalExpenseTestUtility.getAssignmentDetails();
+        sb.append(totalExpenseTestUtility.getAssignmentDetails());
+
+        TotalExpenseTestData testData = new TotalExpenseTestData();
+
 
 
 

@@ -1,10 +1,13 @@
 package test.util;
 
 import edu.ccri.lesson02.assignment.expense.TotalExpense;
+import edu.ccri.lesson02.assignment.poi.PoiWriteDataList;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 import java.text.NumberFormat;
+import java.util.ArrayList;
+import java.util.Iterator;
 
 /**
  * Total expense data
@@ -55,6 +58,12 @@ public class TotalExpenseTestData
         totalExpenseWriteDataFileXml = new TotalExpenseWriteDataFileXml();
     }
 
+    /**
+     * Formats the expense as a string
+     *
+     * @param totalExpense the expense to format
+     * @return formatted expense
+     */
     private String formatString(TotalExpense totalExpense)
     {
         NumberFormat numberFormat = NumberFormat.getCurrencyInstance();
@@ -71,4 +80,166 @@ public class TotalExpenseTestData
         return sb.toString();
 
     }
+
+    /**
+     * Returns the results to display
+     *
+     * @param totalExpenseList the list of total expenses
+     * @return the results to display
+     */
+    private String getDisplayResults(ArrayList<TotalExpense> totalExpenseList)
+    {
+        StringBuilder results = new StringBuilder();
+
+        Iterator<TotalExpense> iterator = totalExpenseList.iterator();
+        TotalExpense total = null;
+        while (iterator.hasNext())
+        {
+            total = iterator.next();
+            results.append(formatString(total));
+            results.append("\n");
+            logger.debug("Total =" + total.toString());
+        }
+
+        return results.toString();
+
+    }
+
+    /**
+     * Get TotalExpenseWriteDataFilePoi
+     *
+     * @return TotalExpenseWriteDataFilePoi
+     */
+    public TotalExpenseWriteDataFilePoi getTotalExpenseWriteDataFilePoi()
+    {
+        return totalExpenseWriteDataFilePoi;
+    }
+
+    /**
+     * Set TotalExpenseWriteDataFilePoi
+     *
+     * @param totalExpenseWriteDataFilePoi the data to set
+     */
+    public void setTotalExpenseWriteDataFilePoi(TotalExpenseWriteDataFilePoi totalExpenseWriteDataFilePoi)
+    {
+        this.totalExpenseWriteDataFilePoi = totalExpenseWriteDataFilePoi;
+    }
+
+    /**
+     * Get TotalExpenseWriteDataFileXml
+     *
+     * @return TotalExpenseWriteDataFileXml
+     */
+    public TotalExpenseWriteDataFileXml getTotalExpenseWriteDataFileXml()
+    {
+        return totalExpenseWriteDataFileXml;
+    }
+
+    /**
+     * Set the TotalExpenseWriteDataFileXml
+     *
+     * @param totalExpenseWriteDataFileXml the data to set
+     */
+    public void setTotalExpenseWriteDataFileXml(TotalExpenseWriteDataFileXml totalExpenseWriteDataFileXml)
+    {
+        this.totalExpenseWriteDataFileXml = totalExpenseWriteDataFileXml;
+    }
+
+    /**
+     * Returns the worksheet name
+     *
+     * @param testDataType test data type
+     * @return the worksheet name
+     */
+    private String getWorksheetName(TestDataType testDataType)
+    {
+        String name = null;
+        if (TestDataType.FIXED == testDataType)
+        {
+            name = WORKSHEET_NAME_FIXED;
+        } else if (TestDataType.XML == testDataType)
+        {
+            name = WORKSHEET_NAME_XML;
+        } else if (TestDataType.EXCEL == testDataType)
+        {
+            name = WORKSHEET_NAME_EXCEL;
+        }
+
+        return name;
+    }
+
+    /**
+     * Initializes the TotalExpenseWriteDataFilePoi and
+     * TotalExpenseWriteDataFileXml instances. This must
+     * be called after the constructor has been called.
+     */
+
+
+    private void initialize()
+    {
+    }
+
+    /**
+     * Prepares to write the results to excel
+     *
+     * @param worksheetName  the worksheet name
+     * @param totalCostList  the total cost list
+     * @param grandTotalCost the grand total cost
+     */
+    private void prepareToWriteResultsPoi(String worksheetName,
+                                          ArrayList<TotalExpense> totalCostList,
+                                          TotalExpense grandTotalCost)
+    {
+        Iterator<TotalExpense> iterator  = null;
+        TotalExpense total = null;
+
+        totalExpenseWriteDataFilePoi.setDataList(new ArrayList<ArrayList<Object>>());
+        totalExpenseWriteDataFilePoi.addTotalExpenseHeading();
+        iterator = totalCostList.iterator();
+        while (iterator.hasNext()){
+            total = iterator.next();
+            totalExpenseWriteDataFilePoi.addTotalExpense(total);
+        }
+        totalExpenseWriteDataFilePoi.addTotalExpense(grandTotalCost);
+        totalExpenseWriteDataFilePoi.addWorksheet(worksheetName);
+
+
+    }
+
+    /**
+     * Prepares to write the results to xml
+     *
+     * @param worksheetName  the worksheet name
+     * @param totalCostList  he total cost list
+     * @param grandTotalCost the grand total cost
+     */
+    private void prepareToWriteResultsXml(String worksheetName,
+                                          ArrayList<TotalExpense> totalCostList,
+                                          TotalExpense grandTotalCost)
+    {
+
+    }
+
+    /**
+     * Uses the data staged from excel or fixed (e.g. hard coded)
+     * to test logic and write the results to excel.
+     *
+     * @param testDataType set to true to the data source to use
+     * @return the results of the test
+     */
+    public String stageData(TestDataType testDataType)
+    {
+        return null;
+
+    }
+
+    /**
+     * Writes the the TotalExpenseWriteDataFilePoi
+     * and TotalExpenseWriteDataFileXml that was prepared to the poi file and xml file.
+     */
+    public void writeFiles()
+    {
+
+    }
+
 }
