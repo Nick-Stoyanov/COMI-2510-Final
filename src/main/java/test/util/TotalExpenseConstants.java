@@ -27,7 +27,7 @@ public class TotalExpenseConstants
     /**
      * Input file name
      */
-    private static String INPUT_FILE_NAME = "src/main/resources/resources/lesson.04.assignment/lesson.properties";
+    private static String INPUT_FILE_NAME = "src/main/resources/resources/lesson04/assignment/in/lesson.properties";
 
     /**
      * Get instance of the logger

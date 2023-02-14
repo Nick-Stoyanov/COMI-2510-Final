@@ -1,8 +1,11 @@
 package test;
 
 import test.util.AssignmentDetails;
+import test.util.TestDataType;
 import test.util.TotalExpenseTestData;
 import test.util.TotalExpenseTestUtility;
+
+import javax.swing.*;
 
 /**
  * Total expense test. This is a very simiple test class.
@@ -39,6 +42,7 @@ public class TotalExpenseTest
 
     /**
      * Set total expense test data
+     *
      * @param totalExpenseTestData data to set
      */
     public static void setTotalExpenseTestData(TotalExpenseTestData totalExpenseTestData)
@@ -63,7 +67,11 @@ public class TotalExpenseTest
 
         TotalExpenseTestData testData = new TotalExpenseTestData();
 
+        testData.stageData(TestDataType.EXCEL);
+        sb.append(testData.stageData(TestDataType.EXCEL));
+        totalExpenseTestData.writeFiles();
 
+        JOptionPane.showMessageDialog(null, sb.toString());
 
 
     }

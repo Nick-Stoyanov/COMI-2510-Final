@@ -4,6 +4,10 @@ import edu.ccri.lesson02.assignment.expense.TotalExpense;
 import edu.ccri.lesson02.assignment.poi.PoiWriteDataList;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
+import test.data.broker.AutomobileBroker;
+import test.data.broker.AutomobileExpenseBroker;
+import test.data.broker.SalesTripBroker;
+import test.data.broker.TravelEntertainmentExpenseBroker;
 
 import java.text.NumberFormat;
 import java.util.ArrayList;
@@ -177,6 +181,8 @@ public class TotalExpenseTestData
 
     private void initialize()
     {
+        totalExpenseWriteDataFilePoi.initialize();
+
     }
 
     /**
@@ -190,19 +196,19 @@ public class TotalExpenseTestData
                                           ArrayList<TotalExpense> totalCostList,
                                           TotalExpense grandTotalCost)
     {
-        Iterator<TotalExpense> iterator  = null;
+        Iterator<TotalExpense> iterator = null;
         TotalExpense total = null;
 
         totalExpenseWriteDataFilePoi.setDataList(new ArrayList<ArrayList<Object>>());
         totalExpenseWriteDataFilePoi.addTotalExpenseHeading();
         iterator = totalCostList.iterator();
-        while (iterator.hasNext()){
+        while (iterator.hasNext())
+        {
             total = iterator.next();
             totalExpenseWriteDataFilePoi.addTotalExpense(total);
         }
         totalExpenseWriteDataFilePoi.addTotalExpense(grandTotalCost);
         totalExpenseWriteDataFilePoi.addWorksheet(worksheetName);
-
 
     }
 
@@ -229,16 +235,56 @@ public class TotalExpenseTestData
      */
     public String stageData(TestDataType testDataType)
     {
-        return null;
+        StringBuilder sb = new StringBuilder();
+        sb.append("Test data type: " + testDataType);
+        sb.append("\n");
+
+        AutomobileBroker automobileTestData = TotalExpenseFactory.getAutomobileTestData(testDataType);
+        TotalExpenseTestCalculations totalExpenseTestCalculations = new TotalExpenseTestCalculations();
+
+        TravelEntertainmentExpenseBroker travelEntertainmentExpenseTestData = TotalExpenseFactory.getTravelEntertainmentExpenseTestData(testDataType);
+
+        logger.debug("Automobile Test Data: " + automobileTestData.toString());
+        logger.debug("Travel & Entertainment Test Data: " + travelEntertainmentExpenseTestData);
+
+        SalesTripBroker salesTripTestData = TotalExpenseFactory.getSalesTripTestData(testDataType);
+        logger.debug("Sales Trip Test Data: " + salesTripTestData.toString());
+
+        AutomobileExpenseBroker automobileExpenseTestData = TotalExpenseFactory.getAutomobileExpenseTestData(testDataType);
+        logger.debug("Automobile Expense Test Data: " + automobileExpenseTestData);
+
+        totalExpenseTestCalculations.setAutomobileTestData(automobileTestData);
+        totalExpenseTestCalculations.setSalesTripTestData(salesTripTestData);
+        totalExpenseTestCalculations.setAutomobileExpenseTestData(automobileExpenseTestData);
+        totalExpenseTestCalculations.setTravelEntertainmentExpenseTestData(travelEntertainmentExpenseTestData);
+
+        ArrayList<TotalExpense> totalCostList = totalExpenseTestCalculations.calculateTotals();
+        totalExpenseTestCalculations.setTotalCostList(totalCostList);
+
+        sb.append(getDisplayResults(totalCostList));
+
+        TotalExpense grandTotal = totalExpenseTestCalculations.calculateGrandTotals();
+        logger.debug("Grand Total: " + grandTotal.toString());
+
+        sb.append(formatString(grandTotal));
+        sb.append("\n");
+
+
+        prepareToWriteResultsPoi(getWorksheetName(testDataType), totalCostList, grandTotal);
+        prepareToWriteResultsXml(getWorksheetName(testDataType),totalCostList,grandTotal);
+        
+        return sb.toString();
+
 
     }
 
     /**
-     * Writes the the TotalExpenseWriteDataFilePoi
+     * Writes the TotalExpenseWriteDataFilePoi
      * and TotalExpenseWriteDataFileXml that was prepared to the poi file and xml file.
      */
     public void writeFiles()
     {
+        totalExpenseWriteDataFilePoi.addWorksheet(this.getWorksheetName(TestDataType.EXCEL));
 
     }
 

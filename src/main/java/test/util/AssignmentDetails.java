@@ -25,7 +25,7 @@ public class AssignmentDetails
     /**
      * This is the primary input file name
      */
-    private static String INPUT_FILE_NAME = "src/main/resources/resources/lesson.04.assignment/assignment.xml";
+    private static String INPUT_FILE_NAME = "src/main/resources/resources/lesson04.assignment/in/assignment.xml";
 
     /**
      * Get instance of the logger
@@ -143,5 +143,14 @@ public class AssignmentDetails
     }
 
 
+    /**
+     * Sets the properties You only want to set this once!
+     *
+     * @param properties the properties to set
+     */
+    public static void setProperties(Properties properties)
+    {
+        AssignmentDetails.properties = properties;
+    }
 }
 
