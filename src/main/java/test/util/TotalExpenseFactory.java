@@ -50,7 +50,7 @@ public class TotalExpenseFactory
         {
 
             broker = new AutomobileExpenseXml();
-        } else if (TestDataType.FIXED == testDataType)
+        } else if (TestDataType.EXCEL == testDataType)
         {
             broker = new AutomobileExpensePoi();
         }

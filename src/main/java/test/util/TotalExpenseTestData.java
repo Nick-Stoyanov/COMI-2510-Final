@@ -59,7 +59,7 @@ public class TotalExpenseTestData
     public TotalExpenseTestData()
     {
         totalExpenseWriteDataFilePoi = new TotalExpenseWriteDataFilePoi();
-        totalExpenseWriteDataFileXml = new TotalExpenseWriteDataFileXml();
+        //totalExpenseWriteDataFileXml = new TotalExpenseWriteDataFileXml();
     }
 
     /**
