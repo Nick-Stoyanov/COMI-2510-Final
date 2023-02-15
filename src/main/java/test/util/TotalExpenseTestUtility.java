@@ -10,6 +10,23 @@ package test.util;
 public class TotalExpenseTestUtility
 {
     /**
+     * This is the fully qualified input file name (e.g. src/main/resources/resources/lesson04.assignment/in).
+     * It will not be hard coded. It will be passed as one of the command
+     * line arguments to the main program. This is being done, so that there are no hard
+     * coded paths in the program!
+     */
+    private String fullyQualifiedInputPath = "src/main/resources/resources/lesson04/assignment/in";
+
+    /**
+     * Constructor
+     */
+    public TotalExpenseTestUtility()
+    {
+        super();
+        TotalExpenseTestData totalExpenseTestData = new TotalExpenseTestData();
+    }
+
+    /**
      * Get the fully input qualified path (e.g. src/main/resources/lesson04/assignment/in/)
      *
      * @return the fully qualified path
@@ -37,6 +54,31 @@ public class TotalExpenseTestUtility
     public String getAssignmentDetails()
     {
         StringBuilder assDeets = new StringBuilder();
+
+        assDeets.append(AssignmentDetails.getProperty("path"));
+        assDeets.append("\n");
+
+        assDeets.append(AssignmentDetails.getProperty("assignment"));
+        assDeets.append("\n");
+
+        assDeets.append(AssignmentDetails.getProperty("name"));
+        assDeets.append("\n");
+
+        assDeets.append(AssignmentDetails.getProperty("student.id"));
+        assDeets.append("\n");
+
+        assDeets.append(AssignmentDetails.getProperty("email"));
+        assDeets.append("\n");
+
+        assDeets.append(AssignmentDetails.getProperty("date"));
+        assDeets.append("\n");
+
+        return assDeets.toString();
+
+
+
+
+        /*
         assDeets.append(AssignmentDetails.getProperty("resource.path"));
         assDeets.append("\n");
 
@@ -81,28 +123,9 @@ public class TotalExpenseTestUtility
 
         assDeets.append(AssignmentDetails.getProperty("worksheet.name.fixed"));
         assDeets.append("\n");
-
-        return assDeets.toString();
+        */
 
     }
-
-    /**
-     * This is the fully qualified input file name (e.g. src/main/resources/lesson04/assignment/in/).
-     * It will not be hard coded. It will be passed as one of the command
-     * line arguments to the main program. This is being done, so that there are no hard
-     * coded paths in the program!
-     */
-    private String fullyQualifiedInputPath;
-
-    /**
-     * Constructor
-     */
-    public TotalExpenseTestUtility()
-    {
-        super();
-        TotalExpenseTestData totalExpenseTestData = new TotalExpenseTestData();
-    }
-
 
     /**
      * Glorious handling the command line arguments

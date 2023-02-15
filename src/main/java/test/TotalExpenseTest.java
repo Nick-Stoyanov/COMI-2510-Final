@@ -8,7 +8,7 @@ import test.util.TotalExpenseTestUtility;
 import javax.swing.*;
 
 /**
- * Total expense test. This is a very simiple test class.
+ * Total expense test. This is a very simple test class.
  * It is possible (and very easy) to test all of this code via Junit without this test class.
  * <p>
  * 2/7/2023
@@ -56,11 +56,11 @@ public class TotalExpenseTest
         TotalExpenseTestUtility totalExpenseTestUtility = new TotalExpenseTestUtility();
 
         totalExpenseTestUtility.gloriousArgs(args);
-        sb.append(args);
+        sb.append("Args passed:" + totalExpenseTestUtility.gloriousArgs(args).toString());
 
         AssignmentDetails assignmentDetails = new AssignmentDetails();
         assignmentDetails.loadProperties(totalExpenseTestUtility.getFullyQualifiedInputPath());
-        sb.append("fully qualified path: " + totalExpenseTestUtility.getFullyQualifiedInputPath());
+        sb.append("fully qualified path: " + totalExpenseTestUtility.getFullyQualifiedInputPath().toString());
 
         totalExpenseTestUtility.getAssignmentDetails();
         sb.append(totalExpenseTestUtility.getAssignmentDetails());
@@ -68,6 +68,7 @@ public class TotalExpenseTest
         TotalExpenseTestData testData = new TotalExpenseTestData();
 
         testData.stageData(TestDataType.EXCEL);
+        setTotalExpenseTestData(testData);
         sb.append(testData.stageData(TestDataType.EXCEL));
         totalExpenseTestData.writeFiles();
 

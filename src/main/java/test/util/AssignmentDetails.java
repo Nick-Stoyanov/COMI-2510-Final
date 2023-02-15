@@ -13,7 +13,7 @@ import java.util.Properties;
  * Assignment details from the assignment.xml file
  * Note the paths must exist, otherwise you will get a java.io.FileNotFoundException when it is run.
  * This  object will use the singleton design pattern
- * This object will read assignment.xml.
+ * This object will read assignment.xml
  * The property values will be output with the test calculation results.
  * <p>
  * 2/5/2023
@@ -25,7 +25,7 @@ public class AssignmentDetails
     /**
      * This is the primary input file name
      */
-    private static String INPUT_FILE_NAME = "src/main/resources/resources/lesson04.assignment/in/assignment.xml";
+    private static String INPUT_FILE_NAME = "src/main/resources/resources/lesson04/assignment/in/assignment.xml";
 
     /**
      * Get instance of the logger
@@ -131,6 +131,7 @@ public class AssignmentDetails
         {
             try (InputStream input = new FileInputStream(INPUT_FILE_NAME))
             {
+                AssignmentDetails.setProperties(new Properties());
                 AssignmentDetails.getProperties().loadFromXML(input);
 
             } catch (IOException e)
