@@ -19,6 +19,7 @@ import java.util.ArrayList;
  *
  * @author Nick Stoyanov
  */
+@SuppressWarnings("DuplicatedCode")
 public class AutomobileExpensePoi extends TestDataSourcePoi implements AutomobileExpenseBroker, TestDataSourceBroker
 {
     /**

@@ -2,10 +2,7 @@ package test.util;
 
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
-import test.data.broker.AutomobileBroker;
-import test.data.broker.AutomobileExpenseBroker;
-import test.data.broker.SalesTripBroker;
-import test.data.broker.TravelEntertainmentExpenseBroker;
+import test.data.broker.*;
 import test.data.fixed.AutomobileExpenseFixed;
 import test.data.fixed.AutomobileFixed;
 import test.data.fixed.SalesTripFixed;
@@ -42,7 +39,7 @@ public class TotalExpenseFactory
      */
     public static AutomobileExpenseBroker getAutomobileExpenseTestData(TestDataType testDataType)
     {
-        AutomobileExpenseBroker broker = null;
+        TestDataSourceBroker broker = null;
         if (TestDataType.FIXED == testDataType)
         {
             broker = new AutomobileExpenseFixed();
@@ -54,8 +51,8 @@ public class TotalExpenseFactory
         {
             broker = new AutomobileExpensePoi();
         }
-
-        return broker;
+        broker.stageTestData();
+        return (AutomobileExpenseBroker) broker;
     }
 
     /**
@@ -66,7 +63,7 @@ public class TotalExpenseFactory
      */
     public static AutomobileBroker getAutomobileTestData(TestDataType testDataType)
     {
-        AutomobileBroker broker = null;
+        TestDataSourceBroker broker = null;
 
         if (TestDataType.FIXED == testDataType)
         {
@@ -79,7 +76,8 @@ public class TotalExpenseFactory
             broker = new AutomobilePoi();
         }
 
-        return broker;
+        broker.stageTestData();
+        return (AutomobileBroker) broker;
     }
 
     /**
@@ -90,11 +88,12 @@ public class TotalExpenseFactory
      */
     public static SalesTripBroker getSalesTripTestData(TestDataType testDataType)
     {
-        SalesTripBroker broker = null;
+        TestDataSourceBroker broker = null;
 
         if (TestDataType.FIXED == testDataType)
         {
             broker = new SalesTripFixed();
+
         } else if (TestDataType.XML == testDataType)
         {
             broker = new SalesTripXml();
@@ -102,7 +101,8 @@ public class TotalExpenseFactory
         {
             broker = new SalesTripPoi();
         }
-        return broker;
+        broker.stageTestData();
+        return (SalesTripBroker) broker;
     }
 
     /**
@@ -113,7 +113,7 @@ public class TotalExpenseFactory
      */
     public static TravelEntertainmentExpenseBroker getTravelEntertainmentExpenseTestData(TestDataType testDataType)
     {
-        TravelEntertainmentExpenseBroker broker = null;
+        TestDataSourceBroker broker = null;
 
         if (TestDataType.FIXED == testDataType)
         {
@@ -125,7 +125,8 @@ public class TotalExpenseFactory
         {
             broker = new TravelEntertainmentExpensePoi();
         }
-        return broker;
+        broker.stageTestData();
+        return (TravelEntertainmentExpenseBroker) broker;
 
     }
 

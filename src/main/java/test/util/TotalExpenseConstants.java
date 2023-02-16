@@ -35,6 +35,16 @@ public class TotalExpenseConstants
     private static final Logger logger = LogManager.getLogger(TotalExpenseConstants.class.getName());
 
     /**
+     * Sets properties
+     *
+     * @param properties properties to set
+     */
+    public static void setProperties(Properties properties)
+    {
+        TotalExpenseConstants.properties = properties;
+    }
+
+    /**
      * Properties file
      */
     private static Properties properties;
@@ -138,7 +148,9 @@ public class TotalExpenseConstants
         {
             try (InputStream input = new FileInputStream(fullyQualifiedInputPath))
             {
-                TotalExpenseConstants.getProperties().loadFromXML(input);
+                TotalExpenseConstants.setProperties(new Properties());
+
+                TotalExpenseConstants.getProperties().load(input);
             } catch (IOException e)
             {
                 e.printStackTrace();
