@@ -75,14 +75,16 @@ public class TotalExpenseTest
         testData.stageData(TestDataType.FIXED);
         setTotalExpenseTestData(testData);
         sb.append("Fixed data: \n" +testData.stageData(TestDataType.FIXED).toString());
-        totalExpenseTestData.writeFiles();
+        //totalExpenseTestData.writeFiles();
         JOptionPane.showMessageDialog(null, sb.toString());
-
+        sb.setLength(0);
 
         testData.stageData(TestDataType.EXCEL);
         setTotalExpenseTestData(testData);
         sb.append(testData.stageData(TestDataType.EXCEL));
-        totalExpenseTestData.writeFiles();
+        //totalExpenseTestData.writeFiles();\
+
+
 
         JOptionPane.showMessageDialog(null, sb.toString());
 

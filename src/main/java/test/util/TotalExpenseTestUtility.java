@@ -139,17 +139,17 @@ public class TotalExpenseTestUtility
 
         if (args.length == 0)
         {
-            sb.append("Whomp,whomp. No Args.");
+            sb.append("Whomp,whomp. No Args.\n");
         } else
         {
-            sb.append("All hail our Glorious leader ");
+            sb.append("All hail our Glorious leader\n");
             for (String str : args)
             {
                 sb.append(str);
                 sb.append(" ");
             }
         }
-        sb.append(".");
+        sb.append(".\n");
         return sb.toString();
 
     }

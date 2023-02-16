@@ -43,7 +43,8 @@ public class AutomobilePoi extends TestDataSourcePoi implements AutomobileBroker
      */
     protected String getFileName()
     {
-        String name = TotalExpenseConstants.getPropertyConcat("a", "b");
+        String name = TotalExpenseConstants.getPropertyConcat("resource.path", "resource.path.input");
+        name = TotalExpenseConstants.getPropertyAppend(name, "excel.input.filename");
         return name;
     }
 
