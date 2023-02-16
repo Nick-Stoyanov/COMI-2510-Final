@@ -21,8 +21,6 @@ t
 Dsrc/main/java/test/data/broker/TravelEntertainmentExpenseBroker.java,a\0\a069c695e9509cd07f5e72e82cc06944d01fb17c
 t
 Dsrc/main/java/test/data/helper/TravelEntertainmentExpenseHelper.java,b\9\b926bec11d40f428941b4ce7117d82c5a197fc7a
-r
-Bsrc/main/java/test/data/fixed/TravelEntertainmentExpenseFixed.java,5\5\5537941389bdcdf1caa95fdd2c9fe304668806f9
 ]
 -src/main/java/test/data/list/ExpenseList.java,8\f\8f6b834d22eea17a969f2dc96931fd288cb6222c
 b
@@ -83,3 +81,13 @@ h
 8src/main/java/test/data/broker/TestDataSourceBroker.java,b\f\bfd257234e51c770650f3252f73de25fc7cb7db5
 [
 +src/main/java/test/data/TestDataSource.java,e\e\eeb35d56faf6bdc7635aec4724d75ebd1040ebe3
+c
+3src/main/java/test/data/helper/SalesTripHelper.java,9\a\9aadf61ac61e5e1f4b0b5c28646cf38d2b4fa27f
+i
+9src/main/java/test/util/TotalExpenseTestCalculations.java,c\e\ced463377491142cf5eddb6b68ed062c9f42be40
+^
+.src/main/java/test/data/poi/AutomobilePoi.java,a\3\a3953efaa8be496ee9a7d599288257ad6cc81f2d
+n
+>src/main/java/test/data/poi/TravelEntertainmentExpensePoi.java,4\0\405e27a5fbf338a9632d84ca62bb1d22b2d2d11a
+]
+-src/main/java/test/data/poi/SalesTripPoi.java,f\b\fb8a45435a8f48e28b9c21a9092596d19a6604d8

@@ -45,7 +45,8 @@ public class AutomobileExpensePoi extends TestDataSourcePoi implements Automobil
     @Override
     protected String getFileName()
     {
-        String name = TotalExpenseConstants.getPropertyConcat("a", "a");
+        String name = TotalExpenseConstants.getPropertyConcat("resource.path", "resource.path.input");
+        name = TotalExpenseConstants.getPropertyAppend(name, "excel.input.filename");
         return name;
     }
 

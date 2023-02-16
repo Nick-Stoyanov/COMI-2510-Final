@@ -73,7 +73,7 @@ public abstract class TestDataSourcePoi extends TestDataSource
      */
     protected boolean needToTransposeExcelData()
     {
-        return true;
+        return false;
     }
 
     /**
@@ -146,6 +146,7 @@ public abstract class TestDataSourcePoi extends TestDataSource
     /**
      * Method to stage the test data with data that is from an Excel file.
      */
+
     public void stageTestData()
     {
         PoiReadDataList poiReadDataList = new PoiReadDataList(this.getFileName(), getWorksheetNumber());
