@@ -39,6 +39,9 @@ public class TravelEntertainmentExpenseXml extends TestDataSourceXml implements 
     @Override
     public void stageTestData()
     {
+        TravelEntertainmentExpenseXmlReadStax data = new TravelEntertainmentExpenseXmlReadStax(this.getTestDataList());
+        data.readFile();
+        data.staxParser();
 
     }
 
@@ -50,6 +53,6 @@ public class TravelEntertainmentExpenseXml extends TestDataSourceXml implements 
     @Override
     public ArrayList<TravelEntertainmentExpense> getTestDataList()
     {
-        return null;
+        return this.testDataList.getTestDataList();
     }
 }

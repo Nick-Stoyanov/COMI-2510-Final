@@ -96,7 +96,7 @@ public class AutomobilePoi extends TestDataSourcePoi implements AutomobileBroker
         data = rowDataList.get(columnNumber);
         tireLife = poiDataValueToDouble(columnNumber, data);
 
-        AutomobileHelper.addExpenses(this.getTestDataList(),name, mpg, fuelCapacity, oilChange, tireLife);
+        AutomobileHelper.addExpense(this.getTestDataList(),name, mpg, fuelCapacity, oilChange, tireLife);
 
 
     }

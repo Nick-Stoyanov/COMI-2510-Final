@@ -2,8 +2,6 @@ package test.data.helper;
 
 import edu.ccri.lesson02.assignment.sales.SalesTrip;
 
-import java.util.ArrayList;
-import java.util.List;
 import java.util.List;
 
 /**
@@ -31,11 +29,11 @@ public class SalesTripHelper
      * @param duration        duration
      * @param distance        distance
      */
-    public static void addExpenses(List<SalesTrip> testDataList,
-                                   String fromCity,
-                                   String destinationCity,
-                                   double duration,
-                                   double distance)
+    public static void addExpense(List<SalesTrip> testDataList,
+                                  String fromCity,
+                                  String destinationCity,
+                                  double duration,
+                                  double distance)
     {
         SalesTrip trip = new SalesTrip(fromCity, destinationCity, duration, distance);
         testDataList.add(trip);

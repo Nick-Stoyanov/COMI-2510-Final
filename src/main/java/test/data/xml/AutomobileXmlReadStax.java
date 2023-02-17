@@ -2,7 +2,9 @@ package test.data.xml;
 
 import edu.ccri.lesson02.assignment.dashboard.Automobile;
 import edu.ccri.lesson04.assignment.xml.ReadXmlStaxData;
+import test.data.helper.AutomobileHelper;
 import test.data.list.AutomobileExpenseList;
+import test.util.TotalExpenseConstants;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -34,42 +36,38 @@ public class AutomobileXmlReadStax extends ReadXmlStaxData
     /**
      * xml tag for name
      */
-    public static final String FUEL = null;
+    public static final String FUEL = "fuelCapacity";
 
     /**
      * xml tag for name
      */
-    public static final String MPG = null;
+    public static final String MPG = "mpg";
 
     /**
      * xml tag for name
      */
-    public static final String NAME = null;
+    public static final String NAME = "name";
 
     /**
      * xml tag for name
      */
-    public static final String OIL = null;
+    public static final String OIL = "oilChange";
 
     /**
      * xml tag for name
      */
-    public static final String ROW = null;
+    public static final String ROW = "row";
 
     /**
      * xml tag for datatype
      */
-    public static final String TABLE = null;
+    public static final String TABLE = "table";
 
-    /**
-     * xml tag for name
-     */
-    public static final String PURCHASE = null;
 
     /**
      * xml tag for row
      */
-    public static final String TIRE = null;
+    public static final String TIRE = "tireLife";
 
     /**
      * Hashmap to populate and add to the list
@@ -85,7 +83,7 @@ public class AutomobileXmlReadStax extends ReadXmlStaxData
     @Override
     protected String getChildTagName()
     {
-        return null;
+        return ROW;
     }
 
     /**
@@ -96,7 +94,9 @@ public class AutomobileXmlReadStax extends ReadXmlStaxData
     @Override
     protected String getFileName()
     {
-        return null;
+        String name = TotalExpenseConstants.getPropertyConcat("resource.path", "resource.path.input");
+        name = TotalExpenseConstants.getPropertyAppend(name, "xml.input.filename.automobile");
+        return name;
     }
 
     /**
@@ -106,6 +106,8 @@ public class AutomobileXmlReadStax extends ReadXmlStaxData
     @Override
     protected void processEndChildTag()
     {
+        AutomobileHelper.addExpense(this.getTestDataList(), this.getHashMap().get(NAME), Double.parseDouble(this.getHashMap().get(MPG)), Double.parseDouble(this.getHashMap().get(FUEL)), Double
+                .parseDouble(this.getHashMap().get(OIL)), Double.parseDouble(this.hashMap.get(TIRE)));
 
     }
 
@@ -121,6 +123,24 @@ public class AutomobileXmlReadStax extends ReadXmlStaxData
     @Override
     protected void processFieldTag(String fieldName, String value)
     {
+        if (this.hashMap == null)
+        {
+            this.setHashMap(new HashMap<>());
+
+        }
+        switch (fieldName)
+        {
+            case NAME:
+            case MPG:
+            case FUEL:
+            case OIL:
+            case TIRE:
+
+            {
+                this.getHashMap().put(fieldName, value);
+                break;
+            }
+        }
 
     }
 
@@ -129,9 +149,9 @@ public class AutomobileXmlReadStax extends ReadXmlStaxData
      *
      * @return the test data list
      */
-    public AutomobileExpenseList getTestDataList()
+    public ArrayList<Automobile> getTestDataList()
     {
-        return testDataList;
+        return testDataList.getTestDataList();
     }
 
     /**

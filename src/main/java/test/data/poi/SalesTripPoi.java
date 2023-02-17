@@ -93,7 +93,7 @@ public class SalesTripPoi extends TestDataSourcePoi implements SalesTripBroker, 
         distance = poiDataValueToDouble(columnNumber, data);
 
 
-        SalesTripHelper.addExpenses(this.getTestDataList(), fromCity, toCity, duration, distance);
+        SalesTripHelper.addExpense(this.getTestDataList(), fromCity, toCity, duration, distance);
 
 
     }

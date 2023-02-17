@@ -61,11 +61,11 @@ public class TotalExpenseTest
         TotalExpenseTestUtility totalExpenseTestUtility = new TotalExpenseTestUtility();
 
         totalExpenseTestUtility.gloriousArgs(args);
-        sb.append("Args passed:" + totalExpenseTestUtility.gloriousArgs(args).toString());
+        sb.append("Args passed:" + totalExpenseTestUtility.gloriousArgs(args));
 
         AssignmentDetails assignmentDetails = new AssignmentDetails();
         assignmentDetails.loadProperties(totalExpenseTestUtility.getFullyQualifiedInputPath());
-        sb.append("fully qualified path: " + totalExpenseTestUtility.getFullyQualifiedInputPath().toString());
+        sb.append("fully qualified path: " + totalExpenseTestUtility.getFullyQualifiedInputPath());
 
         totalExpenseTestUtility.getAssignmentDetails();
         sb.append(totalExpenseTestUtility.getAssignmentDetails());
@@ -74,19 +74,17 @@ public class TotalExpenseTest
 
         testData.stageData(TestDataType.FIXED);
         setTotalExpenseTestData(testData);
-        sb.append("Fixed data: \n" +testData.stageData(TestDataType.FIXED).toString());
+        sb.append("Fixed data: \n" + testData.stageData(TestDataType.FIXED));
         //totalExpenseTestData.writeFiles();
-        JOptionPane.showMessageDialog(null, sb.toString());
-        sb.setLength(0);
+        JOptionPane.showMessageDialog(null, "Fixed data\n" + testData.stageData(TestDataType.FIXED));
+        //sb.setLength(0);
 
         testData.stageData(TestDataType.EXCEL);
         setTotalExpenseTestData(testData);
-        sb.append(testData.stageData(TestDataType.EXCEL));
-        //totalExpenseTestData.writeFiles();\
+        sb.append("Excel data: \n" + testData.stageData(TestDataType.EXCEL));
+        //totalExpenseTestData.writeFiles();
 
-
-
-        JOptionPane.showMessageDialog(null, sb.toString());
+        JOptionPane.showMessageDialog(null, "Excel data\n" + testData.stageData(TestDataType.EXCEL));
 
 
     }

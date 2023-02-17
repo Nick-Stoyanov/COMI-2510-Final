@@ -87,7 +87,7 @@ public class TravelEntertainmentExpensePoi extends TestDataSourcePoi implements 
         data = rowDataList.get(columnNumber);
         foodExpense = poiDataValueToDouble(columnNumber, data);
 
-        TravelEntertainmentExpenseHelper.addExpenses(this.getTestDataList(), name, hotelExpense, foodExpense);
+        TravelEntertainmentExpenseHelper.addExpense(this.getTestDataList(), name, hotelExpense, foodExpense);
 
     }
 

@@ -2,7 +2,9 @@ package test.data.xml;
 
 import edu.ccri.lesson02.assignment.expense.Expense;
 import edu.ccri.lesson04.assignment.xml.ReadXmlStaxData;
+import test.data.helper.AutomobileExpenseHelper;
 import test.data.list.ExpenseList;
+import test.util.TotalExpenseConstants;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -17,38 +19,36 @@ public class AutomobileExpenseXmlReadStax extends ReadXmlStaxData
     /**
      * xml tag for name
      */
-    public static final String FUEL = null;
+    public static final String FUEL = "fuel";
 
     /**
      * xml tag for name
      */
-    public static final String NAME = null;
+    public static final String NAME = "name";
 
     /**
      * xml tag for name
      */
-    public static final String OIL = null;
+    public static final String OIL = "oilChange";
 
     /**
      * xml tag for name
      */
-    public static final String PURCHASE = null;
+    public static final String PURCHASE = "purchasePrice";
 
     /**
      * xml tag for name
      */
-    public static final String ROW = null;
+    public static final String ROW = "row";
 
     /**
      * xml tag for row
      */
-    public static final String TIRE = null;
-
+    public static final String TIRE = "fourNewTires";
     /**
      * Hashmap to populate and add to the list
      */
     private HashMap<String, String> hashMap = new HashMap<>();
-
     /**
      * Automobile expense test data
      */
@@ -56,10 +56,52 @@ public class AutomobileExpenseXmlReadStax extends ReadXmlStaxData
 
     /**
      * Constructor
+     *
+     * @param testDataList test data list
      */
     public AutomobileExpenseXmlReadStax(ArrayList<Expense> testDataList)
     {
         super();
+    }
+
+    /**
+     * Get the hashmap
+     *
+     * @return the hashmap
+     */
+    private HashMap<String, String> getHashMap()
+    {
+        return hashMap;
+    }
+
+    /**
+     * Set hashmap
+     *
+     * @param hashMap map to set
+     */
+    private void setHashMap(HashMap<String, String> hashMap)
+    {
+        this.hashMap = hashMap;
+    }
+
+    /**
+     * Get test data list
+     *
+     * @return test data list
+     */
+    private ArrayList<Expense> getTestDataList()
+    {
+        return testDatalist.getTestDataList();
+    }
+
+    /**
+     * Set test data list
+     *
+     * @param testDatalist list to set
+     */
+    public void setTestDatalist(ExpenseList testDatalist)
+    {
+        this.testDatalist = testDatalist;
     }
 
     /**
@@ -70,7 +112,7 @@ public class AutomobileExpenseXmlReadStax extends ReadXmlStaxData
     @Override
     protected String getChildTagName()
     {
-        return null;
+        return ROW;
     }
 
     /**
@@ -81,16 +123,20 @@ public class AutomobileExpenseXmlReadStax extends ReadXmlStaxData
     @Override
     protected String getFileName()
     {
-        return null;
+        String name = TotalExpenseConstants.getPropertyConcat("resource.path", "resource.path.input");
+        name = TotalExpenseConstants.getPropertyAppend(name, "xml.input.filename.automobile.expenses");
+        return name;
     }
 
     /**
-     * Process the end child tag name e.g. &gt;\child&lt;. When this is called all of the fields (e.g. &gt;field&lt;) between the &gt;child&lt; and
+     * Process the end child tag name e.g. &gt;\child&lt;. When this is called all the fields (e.g. &gt;field&lt;) between the &gt;child&lt; and
      * &gt;\child&lt; tags have been processed.
      */
     @Override
     protected void processEndChildTag()
     {
+        AutomobileExpenseHelper.addExpense(this.getTestDataList(), this.getHashMap().get(NAME), Double.parseDouble(this.getHashMap().get(PURCHASE)), Double.parseDouble(this.getHashMap().get(OIL)), Double
+                .parseDouble(this.getHashMap().get(FUEL)), Double.parseDouble(this.hashMap.get(TIRE)));
 
     }
 
@@ -106,6 +152,23 @@ public class AutomobileExpenseXmlReadStax extends ReadXmlStaxData
     @Override
     protected void processFieldTag(String fieldName, String value)
     {
+        if (this.hashMap == null)
+        {
+            this.setHashMap(new HashMap<>());
+
+        }
+        switch (fieldName)
+        {
+            case NAME:
+            case PURCHASE:
+            case FUEL:
+            case TIRE:
+            case OIL:
+            {
+                this.getHashMap().put(fieldName, value);
+                break;
+            }
+        }
 
     }
 }

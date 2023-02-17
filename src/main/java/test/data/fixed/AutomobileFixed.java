@@ -48,9 +48,9 @@ public class AutomobileFixed extends TestDataSourceFixed implements AutomobileBr
     @Override
     public void stageTestData()
     {
-        AutomobileHelper.addExpenses(this.getTestDataList(), "Mercedes S-Class", 24, 22, 10000, 50000);
-        AutomobileHelper.addExpenses(this.getTestDataList(), "Lexus ES", 28, 15.9, 8000, 40000);
-        AutomobileHelper.addExpenses(this.getTestDataList(), "Honda Accord", 47, 12, 3000, 35000);
+        AutomobileHelper.addExpense(this.getTestDataList(), "Mercedes S-Class", 24, 22, 10000, 50000);
+        AutomobileHelper.addExpense(this.getTestDataList(), "Lexus ES", 28, 15.9, 8000, 40000);
+        AutomobileHelper.addExpense(this.getTestDataList(), "Honda Accord", 47, 12, 3000, 35000);
     }
 
     /**

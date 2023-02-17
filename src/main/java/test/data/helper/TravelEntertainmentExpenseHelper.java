@@ -4,9 +4,6 @@ import edu.ccri.lesson02.assignment.expense.FoodExpense;
 import edu.ccri.lesson02.assignment.expense.HotelExpense;
 import edu.ccri.lesson02.assignment.expense.TravelEntertainmentExpense;
 
-import java.util.ArrayList;
-import java.util.List;
-import java.util.List;
 import java.util.List;
 
 /**
@@ -33,10 +30,10 @@ public class TravelEntertainmentExpenseHelper
      * @param hotelExpense the hotel cost
      * @param foodExpense  the food cost
      */
-    public static void addExpenses(List<TravelEntertainmentExpense> testDataList,
-                                   String name,
-                                   double hotelExpense,
-                                   double foodExpense)
+    public static void addExpense(List<TravelEntertainmentExpense> testDataList,
+                                  String name,
+                                  double hotelExpense,
+                                  double foodExpense)
     {
         TravelEntertainmentExpense expense = new TravelEntertainmentExpense(name, hotelExpense, foodExpense);
         testDataList.add(expense);

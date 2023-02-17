@@ -32,6 +32,13 @@ public class TotalExpenseFactory
     private static final Logger logger = LogManager.getLogger(TotalExpenseFactory.class.getName());
 
     /**
+     * Constructor so javaDoc can stfu
+     */
+    public TotalExpenseFactory()
+    {
+    }
+
+    /**
      * Returns a new concrete test data broker based on the provided test data type.
      *
      * @param testDataType test data type

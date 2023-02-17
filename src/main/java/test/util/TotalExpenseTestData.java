@@ -1,7 +1,6 @@
 package test.util;
 
 import edu.ccri.lesson02.assignment.expense.TotalExpense;
-import edu.ccri.lesson02.assignment.poi.PoiWriteDataList;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import test.data.broker.AutomobileBroker;
@@ -73,13 +72,13 @@ public class TotalExpenseTestData
         NumberFormat numberFormat = NumberFormat.getCurrencyInstance();
         StringBuilder sb = new StringBuilder();
         sb.append("Name: " + totalExpense.getName() + "\n");
-        sb.append("Purchase Price: " + totalExpense.getPurchasePrice() + "\n");
-        sb.append("Food Cost: " + totalExpense.getFoodCost() + "\n");
-        sb.append("Tires Cost: " + totalExpense.getFourTires() + "\n");
-        sb.append("Fuel Cost: " + totalExpense.getFuelCost() + "\n");
-        sb.append("Hotel Cost: " + totalExpense.getHotelCost() + "\n");
-        sb.append("Oil Change Cost: " + totalExpense.getOilChange() + "\n");
-        sb.append("Total Cost: " + totalExpense.getGrandTotalCost() + "\n");
+        sb.append("Purchase Price: ").append(numberFormat.format(totalExpense.getPurchasePrice()) + "\n");
+        sb.append("Food Cost: ").append(numberFormat.format(totalExpense.getFoodCost()) + "\n");
+        sb.append("Tires Cost: ").append(numberFormat.format(totalExpense.getFourTires()) + "\n");
+        sb.append("Fuel Cost: ").append(numberFormat.format(totalExpense.getFuelCost()) + "\n");
+        sb.append("Hotel Cost: ").append(numberFormat.format(totalExpense.getHotelCost()) + "\n");
+        sb.append("Oil Change Cost: ").append(numberFormat.format(totalExpense.getOilChange()) + "\n");
+        sb.append("Total Cost: ").append(numberFormat.format(totalExpense.getGrandTotalCost()) + "\n");
 
         return sb.toString();
 
@@ -271,8 +270,8 @@ public class TotalExpenseTestData
 
 
         prepareToWriteResultsPoi(getWorksheetName(testDataType), totalCostList, grandTotal);
-        prepareToWriteResultsXml(getWorksheetName(testDataType),totalCostList,grandTotal);
-        
+        prepareToWriteResultsXml(getWorksheetName(testDataType), totalCostList, grandTotal);
+
         return sb.toString();
 
 

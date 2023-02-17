@@ -40,7 +40,7 @@ public class AutomobileXml extends TestDataSourceXml implements AutomobileBroker
     @Override
     public ArrayList<Automobile> getTestDataList()
     {
-        return null;
+        return this.testDatalist.getTestDataList();
     }
 
     /**
@@ -49,6 +49,9 @@ public class AutomobileXml extends TestDataSourceXml implements AutomobileBroker
     @Override
     public void stageTestData()
     {
+        AutomobileXmlReadStax data = new AutomobileXmlReadStax(this.getTestDataList());
+        data.readFile();
+        data.staxParser();
 
     }
 }

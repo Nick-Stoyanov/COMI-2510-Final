@@ -29,12 +29,12 @@ public class AutomobileHelper
      * @param oilChange    miles for an oil change
      * @param tireLife     miles for tire change
      */
-    public static void addExpenses(List<Automobile> testDataList,
-                                   String name,
-                                   double mpg,
-                                   double fuelCapacity,
-                                   double oilChange,
-                                   double tireLife)
+    public static void addExpense(List<Automobile> testDataList,
+                                  String name,
+                                  double mpg,
+                                  double fuelCapacity,
+                                  double oilChange,
+                                  double tireLife)
     {
         Automobile car = new Automobile(name);
         car.setMpg(mpg);

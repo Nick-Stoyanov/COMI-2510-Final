@@ -1,8 +1,12 @@
 package test.data.xml;
 
+import edu.ccri.lesson02.assignment.expense.TravelEntertainmentExpense;
 import edu.ccri.lesson04.assignment.xml.ReadXmlStaxData;
+import test.data.helper.TravelEntertainmentExpenseHelper;
 import test.data.list.TravelEntertainmentExpenseList;
+import test.util.TotalExpenseConstants;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 
 /**
@@ -18,19 +22,19 @@ public class TravelEntertainmentExpenseXmlReadStax extends ReadXmlStaxData
     /**
      * xml tag for name
      */
-    public static final String FOOD = null;
+    public static final String FOOD = "food";
     /**
      * xml tag for name
      */
-    public static final String HOTEL = null;
+    public static final String HOTEL = "hotel";
     /**
      * xml tag for name
      */
-    public static final String NAME = null;
+    public static final String NAME = "name";
     /**
      * xml tag for name
      */
-    public static final String ROW = null;
+    public static final String ROW = "row";
     /**
      * Test data list
      */
@@ -43,7 +47,7 @@ public class TravelEntertainmentExpenseXmlReadStax extends ReadXmlStaxData
     /**
      * Constructor
      */
-    public TravelEntertainmentExpenseXmlReadStax()
+    public TravelEntertainmentExpenseXmlReadStax(ArrayList<TravelEntertainmentExpense> testDataList)
     {
         super();
     }
@@ -56,7 +60,7 @@ public class TravelEntertainmentExpenseXmlReadStax extends ReadXmlStaxData
     @Override
     protected String getChildTagName()
     {
-        return null;
+        return ROW;
     }
 
     /**
@@ -67,7 +71,9 @@ public class TravelEntertainmentExpenseXmlReadStax extends ReadXmlStaxData
     @Override
     protected String getFileName()
     {
-        return null;
+        String name = TotalExpenseConstants.getPropertyConcat("resource.path", "resource.path.input");
+        name = TotalExpenseConstants.getPropertyAppend(name, "xml.input.filename.travel.entertainment");
+        return name;
     }
 
     /**
@@ -77,6 +83,8 @@ public class TravelEntertainmentExpenseXmlReadStax extends ReadXmlStaxData
     @Override
     protected void processEndChildTag()
     {
+        TravelEntertainmentExpenseHelper.addExpense(this.getTestDataList(), this.getHashMap().
+                get(NAME), Double.parseDouble(this.getHashMap().get(HOTEL)), Double.parseDouble(this.getHashMap().get(FOOD)));
 
     }
 
@@ -92,6 +100,23 @@ public class TravelEntertainmentExpenseXmlReadStax extends ReadXmlStaxData
     @Override
     protected void processFieldTag(String fieldName, String value)
     {
+        if (this.hashMap == null)
+        {
+            this.setHashMap(new HashMap<>());
+
+        }
+        switch (fieldName)
+        {
+            case NAME:
+            case HOTEL:
+            case FOOD:
+
+            {
+                this.getHashMap().put(fieldName, value);
+                break;
+            }
+        }
+
 
     }
 
@@ -100,9 +125,9 @@ public class TravelEntertainmentExpenseXmlReadStax extends ReadXmlStaxData
      *
      * @return test data list
      */
-    public TravelEntertainmentExpenseList getTestDataList()
+    public ArrayList<TravelEntertainmentExpense> getTestDataList()
     {
-        return testDataList;
+        return testDataList.getTestDataList();
     }
 
     /**

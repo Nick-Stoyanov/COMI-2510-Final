@@ -5,8 +5,6 @@ import edu.ccri.lesson02.assignment.sales.SalesTrip;
 import test.data.TestDataSourceXml;
 import test.data.broker.SalesTripBroker;
 import test.data.broker.TestDataSourceBroker;
-import test.data.fixed.SalesTripFixed;
-import test.data.helper.SalesTripHelper;
 import test.data.list.SalesTripList;
 
 import java.util.ArrayList;
@@ -52,7 +50,9 @@ public class SalesTripXml extends TestDataSourceXml implements SalesTripBroker, 
     @Override
     public void stageTestData()
     {
-
+        SalesTripXmlReadStax data = new SalesTripXmlReadStax(this.getTestDataList());
+        data.readFile();
+        data.staxParser();
 
     }
 }

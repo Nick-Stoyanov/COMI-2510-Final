@@ -49,13 +49,13 @@ public class SalesTripFixed extends TestDataSourceFixed implements SalesTripBrok
     @Override
     public void stageTestData()
     {
-        SalesTripHelper.addExpenses(this.getTestDataList(), "Providence", "Miami", 22.5, 1462.7);
-        SalesTripHelper.addExpenses(this.getTestDataList(), "Miami", "Dallas", 19.75, 1309.1);
-        SalesTripHelper.addExpenses(this.getTestDataList(), "Dallas", "Los Angeles", 21.5, 1435.7);
-        SalesTripHelper.addExpenses(this.getTestDataList(), "Los Angeles", "Seattle", 17.9, 1135.1);
-        SalesTripHelper.addExpenses(this.getTestDataList(), "Seattle", "Chicago", 31, 2042.8);
-        SalesTripHelper.addExpenses(this.getTestDataList(), "Chicago", "New York", 12.2, 788.9);
-        SalesTripHelper.addExpenses(this.getTestDataList(), "New York", "Providence", 3.5, 180.9);
+        SalesTripHelper.addExpense(this.getTestDataList(), "Providence", "Miami", 22.5, 1462.7);
+        SalesTripHelper.addExpense(this.getTestDataList(), "Miami", "Dallas", 19.75, 1309.1);
+        SalesTripHelper.addExpense(this.getTestDataList(), "Dallas", "Los Angeles", 21.5, 1435.7);
+        SalesTripHelper.addExpense(this.getTestDataList(), "Los Angeles", "Seattle", 17.9, 1135.1);
+        SalesTripHelper.addExpense(this.getTestDataList(), "Seattle", "Chicago", 31, 2042.8);
+        SalesTripHelper.addExpense(this.getTestDataList(), "Chicago", "New York", 12.2, 788.9);
+        SalesTripHelper.addExpense(this.getTestDataList(), "New York", "Providence", 3.5, 180.9);
 
     }
 

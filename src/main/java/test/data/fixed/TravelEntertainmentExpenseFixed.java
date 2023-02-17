@@ -48,11 +48,11 @@ public class TravelEntertainmentExpenseFixed extends TestDataSourceFixed impleme
     @Override
     public void stageTestData()
     {
-        TravelEntertainmentExpenseHelper.addExpenses(this.getTestDataList(), "Honda Accord", 283.35, 75.50);
-        TravelEntertainmentExpenseHelper.addExpenses(this.getTestDataList(), "Jeep Cherokee", 374.60, 75.01);
-        TravelEntertainmentExpenseHelper.addExpenses(this.getTestDataList(), "Lexus ES", 418.75, 100.75);
-        TravelEntertainmentExpenseHelper.addExpenses(this.getTestDataList(), "Lincoln Navigator", 525.60, 75.75);
-        TravelEntertainmentExpenseHelper.addExpenses(this.getTestDataList(), "Mercedes S-Class", 1121.50, 250.99);
+        TravelEntertainmentExpenseHelper.addExpense(this.getTestDataList(), "Honda Accord", 283.35, 75.50);
+        TravelEntertainmentExpenseHelper.addExpense(this.getTestDataList(), "Jeep Cherokee", 374.60, 75.01);
+        TravelEntertainmentExpenseHelper.addExpense(this.getTestDataList(), "Lexus ES", 418.75, 100.75);
+        TravelEntertainmentExpenseHelper.addExpense(this.getTestDataList(), "Lincoln Navigator", 525.60, 75.75);
+        TravelEntertainmentExpenseHelper.addExpense(this.getTestDataList(), "Mercedes S-Class", 1121.50, 250.99);
 
     }
 

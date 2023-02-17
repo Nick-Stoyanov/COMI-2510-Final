@@ -2,7 +2,9 @@ package test.data.xml;
 
 import edu.ccri.lesson02.assignment.sales.SalesTrip;
 import edu.ccri.lesson04.assignment.xml.ReadXmlStaxData;
+import test.data.helper.SalesTripHelper;
 import test.data.list.SalesTripList;
+import test.util.TotalExpenseConstants;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -19,23 +21,23 @@ public class SalesTripXmlReadStax extends ReadXmlStaxData
     /**
      * xml tag for name
      */
-    public static final String DISTANCE = null;
+    public static final String DISTANCE = "distance";
     /**
      * xml tag for name
      */
-    public static final String DURATION = null;
+    public static final String DURATION = "duration";
     /**
      * xml tag for name
      */
-    public static final String FROM = null;
+    public static final String FROM = "from";
     /**
      * xml tag for name
      */
-    public static final String TO = null;
+    public static final String TO = "to";
     /**
      * xml tag for name
      */
-    public static final String ROW = null;
+    public static final String ROW = "row";
     /**
      * Test data list
      */
@@ -63,7 +65,7 @@ public class SalesTripXmlReadStax extends ReadXmlStaxData
     @Override
     protected String getChildTagName()
     {
-        return null;
+        return ROW;
     }
 
     /**
@@ -74,7 +76,9 @@ public class SalesTripXmlReadStax extends ReadXmlStaxData
     @Override
     protected String getFileName()
     {
-        return null;
+        String name = TotalExpenseConstants.getPropertyConcat("resource.path", "resource.path.input");
+        name = TotalExpenseConstants.getPropertyAppend(name, "xml.input.filename.sales.trip");
+        return name;
     }
 
     /**
@@ -84,6 +88,8 @@ public class SalesTripXmlReadStax extends ReadXmlStaxData
     @Override
     protected void processEndChildTag()
     {
+        SalesTripHelper.addExpense(this.getTestDataList(), this.getHashMap().get(FROM), this.getHashMap().get(TO), Double.parseDouble(this.getHashMap().get(DURATION)), Double.parseDouble(this.getHashMap().get(DISTANCE)));
+
 
     }
 
@@ -100,6 +106,24 @@ public class SalesTripXmlReadStax extends ReadXmlStaxData
     protected void processFieldTag(String fieldName, String value)
     {
 
+        if (this.hashMap == null)
+        {
+            this.setHashMap(new HashMap<>());
+
+        }
+        switch (fieldName)
+        {
+            case FROM:
+            case TO:
+            case DISTANCE:
+            case DURATION:
+
+            {
+                this.getHashMap().put(fieldName, value);
+                break;
+            }
+        }
+
     }
 
     /**
@@ -107,9 +131,9 @@ public class SalesTripXmlReadStax extends ReadXmlStaxData
      *
      * @return test data list
      */
-    public SalesTripList getTestDataList()
+    public ArrayList<SalesTrip> getTestDataList()
     {
-        return testDataList;
+        return testDataList.getTestDataList();
     }
 
     /**
