@@ -86,6 +86,12 @@ public class TotalExpenseTest
 
         JOptionPane.showMessageDialog(null, "Excel data\n" + testData.stageData(TestDataType.EXCEL));
 
+        testData.stageData(TestDataType.XML);
+        setTotalExpenseTestData(testData);
+        sb.append("XML data: \n" + testData.stageData(TestDataType.XML));
+
+        JOptionPane.showMessageDialog(null, "XML data: \n" + testData.stageData(TestDataType.XML));
+
 
     }
 }
