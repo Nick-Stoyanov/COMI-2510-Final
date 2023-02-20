@@ -110,8 +110,8 @@ public class TotalExpenseTestCalculations
         Iterator<Automobile> iterator = this.getAutomobileTestData().getTestDataList().iterator();
 
         Automobile car = null;
-        double totalTripDistance = SalesTripHelper.getTotalSalesTripDistance(salesTripTestData.getTestDataList());
-        double totalTripDuration = SalesTripHelper.getTotalSalesTripDuration(salesTripTestData.getTestDataList());
+        double totalTripDistance = SalesTripHelper.getTotalSalesTripDistance(this.salesTripTestData.getTestDataList());
+        double totalTripDuration = SalesTripHelper.getTotalSalesTripDuration(this.salesTripTestData.getTestDataList());
 
         logger.debug("totalTripDistance = " + totalTripDistance + "\ntotalTripDuration = " + totalTripDuration);
 

@@ -1,6 +1,7 @@
 package test.util;
 
 import edu.ccri.lesson02.assignment.expense.TotalExpense;
+import org.apache.commons.lang3.exception.ExceptionUtils;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import test.data.broker.AutomobileBroker;
@@ -8,9 +9,13 @@ import test.data.broker.AutomobileExpenseBroker;
 import test.data.broker.SalesTripBroker;
 import test.data.broker.TravelEntertainmentExpenseBroker;
 
+import java.io.FileNotFoundException;
+import java.io.FileOutputStream;
+import java.io.IOException;
 import java.text.NumberFormat;
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.UUID;
 
 /**
  * Total expense data
@@ -207,6 +212,7 @@ public class TotalExpenseTestData
             totalExpenseWriteDataFilePoi.addTotalExpense(total);
         }
         totalExpenseWriteDataFilePoi.addTotalExpense(grandTotalCost);
+        totalExpenseWriteDataFilePoi.addWorksheet(worksheetName);
 
 
     }
@@ -234,7 +240,7 @@ public class TotalExpenseTestData
      */
     public String stageData(TestDataType testDataType)
     {
-        StringBuilder sb = new StringBuilder();
+         StringBuilder sb = new StringBuilder();
         sb.append("Test data type: " + testDataType);
         sb.append("\n");
 
@@ -283,8 +289,11 @@ public class TotalExpenseTestData
      */
     public void writeFiles()
     {
-        totalExpenseWriteDataFilePoi.addWorksheet(this.getWorksheetName(TestDataType.EXCEL));
+
 
     }
+
+
+
 
 }
