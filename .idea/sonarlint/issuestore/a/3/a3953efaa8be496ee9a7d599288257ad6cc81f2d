@@ -1,0 +1,11 @@
+
+W
+java:S1854N"<Remove this useless assignment to local variable "tireLife".(™†®Âüÿÿÿÿ
+R
+java:S1854M"=Remove this useless assignment to local variable "oilChange".(úõ¿
+[
+java:S1854L"@Remove this useless assignment to local variable "fuelCapacity".(ÿ¥¤¦øÿÿÿÿ
+R
+java:S1854K"7Remove this useless assignment to local variable "mpg".(î èšøÿÿÿÿ
+U
+java:S1161x":Add the "@Override" annotation above this method signature(Ûìç¢şÿÿÿÿ

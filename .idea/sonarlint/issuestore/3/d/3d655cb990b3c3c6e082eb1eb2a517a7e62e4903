@@ -1,0 +1,14 @@
+
+e
+java:S6208p"CMerge the previous cases into this one using comma-separated label.(“Ê¹úÿÿÿÿ8úğÉûæ0
+
+java:S13192"lThe type of "testDataList" should be an interface such as "List" rather than the implementation "ArrayList".(„Ğ©Øûÿÿÿÿ8ûğÉûæ0
+
+java:S1319€"pThe return type of this method should be an interface such as "List" rather than the implementation "ArrayList".(ñ½”„8ûğÉûæ0
+
+java:S1319”"mThe return type of this method should be an interface such as "Map" rather than the implementation "HashMap".(¥èäòùÿÿÿÿ8üğÉûæ0
+‡
+java:S1319"dThe type of "hashMap" should be an interface such as "Map" rather than the implementation "HashMap".(ÖÑéúÿÿÿÿ8üğÉûæ0
+U
+java:S11722"3Remove this unused method parameter "testDataList".(„Ğ©Øûÿÿÿÿ8ñÉûæ0
+C	java:S131l""Add a default case to this switch.(¤ÇöŸùÿÿÿÿ8‘ñÉûæ0

@@ -1,0 +1,21 @@
+
+M
+java:S2629D"7Use the built-in formatting to construct this argument.(øÁ–†
+r
+java:S2629V"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(§·ä
+r
+java:S2629h"\Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.(‰Âñ–
+u
+java:S3008"ZRename this field "INPUT_FILE_NAME" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Ø÷¨±şÿÿÿÿ
+8
+java:S1118+"Hide this public constructor.(”ä…øÿÿÿÿ
+W
+java:S3457D"AFormat specifiers should be used instead of string concatenation.(øÁ–†
+W
+java:S3457V"AFormat specifiers should be used instead of string concatenation.(§·ä
+W
+java:S3457h"AFormat specifiers should be used instead of string concatenation.(‰Âñ–
+]
+java:S1172u"BRemove these unused method parameters "suffixValue", "namePrefix".(öéåºıÿÿÿÿ
+]
+java:S3457Œ"AFormat specifiers should be used instead of string concatenation.(ÒêÚğşÿÿÿÿ
