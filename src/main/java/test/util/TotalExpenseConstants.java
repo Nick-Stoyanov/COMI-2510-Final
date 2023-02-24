@@ -134,6 +134,7 @@ public class TotalExpenseConstants
     public static String getPropertyPrepend(String suffixValue,
                                             String namePrefix)
     {
+
         return null;
     }
 
