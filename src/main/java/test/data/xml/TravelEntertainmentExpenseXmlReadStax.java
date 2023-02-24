@@ -125,7 +125,7 @@ public class TravelEntertainmentExpenseXmlReadStax extends ReadXmlStaxData
      *
      * @return test data list
      */
-    public ArrayList<TravelEntertainmentExpense> getTestDataList()
+    protected ArrayList<TravelEntertainmentExpense> getTestDataList()
     {
         return testDataList.getTestDataList();
     }
@@ -135,7 +135,7 @@ public class TravelEntertainmentExpenseXmlReadStax extends ReadXmlStaxData
      *
      * @param testDataList the list to set
      */
-    public void setTestDataList(TravelEntertainmentExpenseList testDataList)
+    protected void setTestDataList(TravelEntertainmentExpenseList testDataList)
     {
         this.testDataList = testDataList;
     }
@@ -145,7 +145,7 @@ public class TravelEntertainmentExpenseXmlReadStax extends ReadXmlStaxData
      *
      * @return the hashmap
      */
-    public HashMap<String, String> getHashMap()
+    private HashMap<String, String> getHashMap()
     {
         return hashMap;
     }
@@ -155,7 +155,7 @@ public class TravelEntertainmentExpenseXmlReadStax extends ReadXmlStaxData
      *
      * @param hashMap the hashmap to set
      */
-    public void setHashMap(HashMap<String, String> hashMap)
+    private void setHashMap(HashMap<String, String> hashMap)
     {
         this.hashMap = hashMap;
     }

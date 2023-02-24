@@ -110,8 +110,9 @@ public class TravelEntertainmentExpensePoi extends TestDataSourcePoi implements 
     @Override
     public String toString()
     {
-        return "TravelEntertainmentExpensePoi{" +
-                "testDataList=" + testDataList +
-                '}';
+        StringBuilder sb = new StringBuilder();
+        sb.append("TravelEntertainmentExpensePoi");
+        sb.append("\nTest data list: " + testDataList);
+        return sb.toString();
     }
 }

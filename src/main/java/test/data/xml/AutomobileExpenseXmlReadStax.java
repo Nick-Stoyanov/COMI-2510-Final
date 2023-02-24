@@ -89,7 +89,7 @@ public class AutomobileExpenseXmlReadStax extends ReadXmlStaxData
      *
      * @return test data list
      */
-    private ArrayList<Expense> getTestDataList()
+    protected ArrayList<Expense> getTestDataList()
     {
         return testDatalist.getTestDataList();
     }

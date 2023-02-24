@@ -149,7 +149,7 @@ public class AutomobileXmlReadStax extends ReadXmlStaxData
      *
      * @return the test data list
      */
-    public ArrayList<Automobile> getTestDataList()
+    protected ArrayList<Automobile> getTestDataList()
     {
         return testDataList.getTestDataList();
     }
@@ -169,7 +169,7 @@ public class AutomobileXmlReadStax extends ReadXmlStaxData
      *
      * @return the hashmap
      */
-    public HashMap<String, String> getHashMap()
+    private HashMap<String, String> getHashMap()
     {
         return hashMap;
     }
@@ -179,7 +179,7 @@ public class AutomobileXmlReadStax extends ReadXmlStaxData
      *
      * @param hashMap hashmap to set
      */
-    public void setHashMap(HashMap<String, String> hashMap)
+    private void setHashMap(HashMap<String, String> hashMap)
     {
         this.hashMap = hashMap;
     }

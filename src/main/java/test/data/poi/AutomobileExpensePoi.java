@@ -122,8 +122,9 @@ public class AutomobileExpensePoi extends TestDataSourcePoi implements Automobil
     @Override
     public String toString()
     {
-        return "AutomobileExpensePoi{" +
-                "testDataList=" + testDataList +
-                '}';
+        StringBuilder sb = new StringBuilder();
+        sb.append("AutomobileExpensePoi");
+        sb.append("\nTest data list: " + testDataList);
+        return sb.toString();
     }
 }
