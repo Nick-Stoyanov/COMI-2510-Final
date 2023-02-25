@@ -135,9 +135,10 @@ public class TotalExpenseWriteDataFilePoi extends PoiWriteDataList
     @Override
     public String toString()
     {
-        return "TotalExpenseWriteDataFilePoi{" +
-                "dataList=" + dataList +
-                '}';
+        StringBuilder sb = new StringBuilder();
+        sb.append("TotalExpenseWriteDataFilePoi()");
+        sb.append("\ndataList=" + dataList);
+        return sb.toString();
     }
 }
 

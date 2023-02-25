@@ -1,5 +1,6 @@
 package test.util;
 
+import edu.ccri.lesson04.assignment.xml.XmlStaxData;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.apache.poi.ss.formula.functions.T;
@@ -87,18 +88,17 @@ class TotalExpenseTestDataTest
      */
     void setTotalExpenseWriteDataFileXml()
     {
-        /*
+
         TotalExpenseWriteDataFileXml poi = new TotalExpenseWriteDataFileXml();
-        ArrayList<ArrayList<Object>> outer = new ArrayList<>();
-        ArrayList<Object> inner = new ArrayList<>();
-        inner.add("test");
+        ArrayList<ArrayList<XmlStaxData>> outer = new ArrayList<>();
+        ArrayList<XmlStaxData> inner = new ArrayList<>();
         outer.add(inner);
         poi.setDataList(outer);
 
-        totalExpenseTestData.setTotalExpenseWriteDataFilePoi(poi);
+        totalExpenseTestData.setTotalExpenseWriteDataFileXml(poi);
 
         assertTrue(totalExpenseTestData.getTotalExpenseWriteDataFilePoi()!=null);
-        */
+
 
 
     }

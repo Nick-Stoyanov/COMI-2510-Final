@@ -77,54 +77,6 @@ public class TotalExpenseTestUtility
 
 
 
-
-        /*
-        assDeets.append(AssignmentDetails.getProperty("resource.path"));
-        assDeets.append("\n");
-
-        assDeets.append(AssignmentDetails.getProperty("resource.path.input"));
-        assDeets.append("\n");
-
-        assDeets.append(AssignmentDetails.getProperty("resource.path.output"));
-        assDeets.append("\n");
-
-        assDeets.append(AssignmentDetails.getProperty("excel.input.filename"));
-        assDeets.append("\n");
-
-        assDeets.append(AssignmentDetails.getProperty("excel.output.filename.prefix"));
-        assDeets.append("\n");
-
-        assDeets.append(AssignmentDetails.getProperty("excel.output.filename.suffix"));
-        assDeets.append("\n");
-
-        assDeets.append(AssignmentDetails.getProperty("xml.output.filename.prefix"));
-        assDeets.append("\n");
-
-        assDeets.append(AssignmentDetails.getProperty("xml.output.filename.suffix"));
-        assDeets.append("\n");
-
-        assDeets.append(AssignmentDetails.getProperty("xml.input.filename.automobile.expenses"));
-        assDeets.append("\n");
-
-        assDeets.append(AssignmentDetails.getProperty("xml.input.filename.automobile"));
-        assDeets.append("\n");
-
-        assDeets.append(AssignmentDetails.getProperty("xml.input.filename.sales.trip"));
-        assDeets.append("\n");
-
-        assDeets.append(AssignmentDetails.getProperty("xml.input.filename.travel.entertainment"));
-        assDeets.append("\n");
-
-        assDeets.append(AssignmentDetails.getProperty("worksheet.name.excel"));
-        assDeets.append("\n");
-
-        assDeets.append(AssignmentDetails.getProperty("worksheet.name.xml="));
-        assDeets.append("\n");
-
-        assDeets.append(AssignmentDetails.getProperty("worksheet.name.fixed"));
-        assDeets.append("\n");
-        */
-
     }
 
     /**

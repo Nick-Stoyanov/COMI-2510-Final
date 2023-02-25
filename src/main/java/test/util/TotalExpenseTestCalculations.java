@@ -282,13 +282,14 @@ public class TotalExpenseTestCalculations
     @Override
     public String toString()
     {
-        return "TotalExpenseTestCalculations{" +
-                "automobileExpenseTestData=" + automobileExpenseTestData +
-                ", automobileTestData=" + automobileTestData +
-                ", key=" + key +
-                ", salesTripTestData=" + salesTripTestData +
-                ", totalCostList=" + totalCostList +
-                ", travelEntertainmentExpenseTestData=" + travelEntertainmentExpenseTestData +
-                '}';
+        StringBuilder sb = new StringBuilder();
+        sb.append("TotalExpenseTestCalculations");
+        sb.append("\nautomobileExpenseTestData=" + automobileExpenseTestData);
+        sb.append("\nautomobileTestData=" + automobileTestData);
+        sb.append("\nkey=" + key);
+        sb.append("\nsalesTripTestData=" + salesTripTestData);
+        sb.append("\ntotalCostList=" + totalCostList);
+        sb.append("\ntravelEntertainmentExpenseTestData=" + travelEntertainmentExpenseTestData);
+        return sb.toString();
     }
 }
