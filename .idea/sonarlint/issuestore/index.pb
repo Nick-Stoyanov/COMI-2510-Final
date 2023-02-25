@@ -123,8 +123,6 @@ t
 Dsrc/test/java/test/data/list/TravelEntertainmentExpenseListTest.java,4\2\4217573250d6f9e818d1d4d23e7d3299f296074e
 c
 3src/test/java/test/data/list/SalesTripListTest.java,e\3\e3320571a2c32e70a4b0d49d9ab5d770ef642be3
-v
-Fsrc/main/java/test/data/xml/TravelEntertainmentExpenseXmlReadStax.java,3\d\3d655cb990b3c3c6e082eb1eb2a517a7e62e4903
 i
 9src/test/java/test/data/poi/AutomobileExpensePoiTest.java,d\f\dfd7d2facea915621aa27d63e3996893bf48a577
 f

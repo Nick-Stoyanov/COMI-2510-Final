@@ -46,6 +46,8 @@ public class TravelEntertainmentExpenseXmlReadStax extends ReadXmlStaxData
 
     /**
      * Constructor
+     *
+     * @param testDataList test data list
      */
     public TravelEntertainmentExpenseXmlReadStax(ArrayList<TravelEntertainmentExpense> testDataList)
     {
